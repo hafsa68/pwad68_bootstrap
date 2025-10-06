@@ -2,3 +2,13 @@
         border-radius: 0;
         margin-bottom: 0;
     }
+    .sidenav {
+      padding-top: 20px;
+      background-color: #c5e8f8;
+      height: 100%;
+    }
+    footer {
+      background-color: #a6b3b6;
+      color: rgb(240, 235, 235);
+      padding: 15px;
+    }
