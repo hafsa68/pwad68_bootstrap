@@ -1,0 +1,12 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.hero {
+  background: url("https://picsum.photos/1600/700") no-repeat center center/cover;
+  height: 80vh;
+}
+
+.hero h1 {
+  font-size: 3rem;
+}
