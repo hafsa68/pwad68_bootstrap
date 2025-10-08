@@ -29,27 +29,55 @@
 	<link rel="stylesheet" href="assets/css/style.css">
 	<!-- Responsive  CSS -->
 	<link rel="stylesheet" href="assets/css/responsive.css">
-<style>
-	
-	.section-padding {
-    padding: 10px;
-	}
-	.single-step h5 {
-    margin: 8px;
-	font-size: 13px;
-}
+	<style>
+		.section-padding {
+			padding: 10px;
+		}
 
-.single-step-icon {
-    font-size: 30px;
-    color: #333;
-    background: #034ea2;
-    border: 1px solid #ddd;
-    height: 50px;
-    width: 50px;
-    line-height: 50px;
-}
+		.single-step h5 {
+			margin: 8px;
+			font-size: 13px;
+		}
+
+		.single-step-icon {
+			font-size: 30px;
+			color: #333;
+			background: #034ea2;
+			border: 1px solid #ddd;
+			height: 50px;
+			width: 50px;
+			line-height: 50px;
+		}
+
+		.top-area {
+			background: #0e0d0d;
+		}
+
+		body {
+			color: aliceblue;
+		}
+		.mainmenu-area {
+    background: #f8f5f5;
+    width: 100%;
+	height: 100px;
+    position: relative;
+    z-index: 999;
+    
 	
-</style>
+}
+.mainmenu-area .navbar-nav .active .nav-link {
+    background-color: #f8f5f5;
+}
+	.mainmenu-area .navbar-nav .nav-link{
+		color:#080808f8;
+	}
+	
+	.navbar-brand {
+    display: flex;
+
+    align-items: center;
+}
+	</style>
 </head>
 
 <body>
@@ -78,17 +106,64 @@
 						</div>
 					</div>
 					<!-- end col -->
-					
+
 					<div class="col-lg-8 col-md-12 col-sm-12 col-12">
 						<div class="info-menu">
-							<div class="ttm-topber-content" style="float: right;"></div>
-							<a href="tel:10606"></a>
-							<div class="text-right button_wrapper"></div>
-							<div></div>
+							<!-- 🔥 Hotline Floating Button -->
+							<div class="hotline-btn" onclick="window.location.href='tel:10606'">
+								Hotline<br>10606
+							</div>
+
+							<style>
+								.hotline-btn {
+									position: fixed;
+
+
+									top: 0px;
+									right: 0;
+									color: #fff;
+									font-weight: bold;
+									font-size: 18px;
+									padding: 12px 20px;
+
+									border-bottom-left-radius: 15px;
+									border-bottom-left-radius: 20px;
+									border-bottom-right-radius: 20px;
+
+									cursor: pointer;
+									z-index: 1000;
+									text-align: center;
+									animation: colorChange 0.5s infinite alternate,
+										glowEffect 0.5s infinite alternate;
+									transition: transform 0.1s ease;
+								}
+
+								/* 🔁 Color changing animation */
+								@keyframes colorChange {
+									100% {
+										background-color: #ff4500;
+									}
+
+									/* লাল */
+									0% {
+										background-color: #28a745;
+									}
+
+									/* সবুজ */
+								}
+
+								/* 💡 Glow effect animation */
+
+
+								.hotline-btn:hover {
+									transform: scale(1.08);
+								}
+							</style>
+
 						</div>
 					</div>
 					<!-- end col -->
-					
+
 				</div>
 			</div>
 		</div>
@@ -100,7 +175,7 @@
 						<div class="col-lg-9 d-lg-block d-md-none d-sm-none d-none ">
 							<nav class="navbar navbar-expand-lg justify-content-left">
 								<a class="navbar-brand" href="#">
-									<img src="assets/img/logo.png" alt="Logo" style="width:170px;">
+									<img src="https://labaid.com.bd/UI/PublicUI/images/logo-img.png" alt="Logo" style="width:170px;">
 								</a>
 								<ul class="navbar-nav">
 									<li class="active dropdown"><a href="index.html" class="nav-link">Home</a>
@@ -152,7 +227,7 @@
 								</ul>
 							</nav>
 						</div>
-						
+
 					</div>
 				</div>
 				<!--- END CONTAINER -->
@@ -274,7 +349,7 @@
 			<!--- END CONTAINER -->
 		</section>
 		<!-- END APPOINTMENT SECTION -->
-		
+
 
 		<!-- START NAVIGATION AREA -->
 
