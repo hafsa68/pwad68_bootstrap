@@ -879,9 +879,9 @@ transform-origin: 50%;
     height: 100%;
     width: 100%;
     opacity: 0.8;
-	background: -moz-linear-gradient(200deg, rgba(70, 199, 207, 0.8) 0%,rgba(123,100,203,0.8) 100%);
+	/* background: -moz-linear-gradient(200deg, rgba(70, 199, 207, 0.8) 0%,rgba(123,100,203,0.8) 100%);
 	background: -webkit-linear-gradient(200deg, rgba(70, 199, 207, 0.8) 0%,rgba(123,100,203,0.8) 100%);
-    background: linear-gradient(200deg, rgba(70, 199, 207, 0.8) 0%,rgba(123,100,203,0.8) 100%);
+    background: linear-gradient(200deg, rgba(70, 199, 207, 0.8) 0%,rgba(123,100,203,0.8) 100%); */
 }
 .home-single-slide {
     background-size: cover;
