@@ -33,14 +33,355 @@
 
 
 	<style>
-		.search__container{
+		.search__container {
 			padding-top: 0px;
 			margin-top: -240px;
 		}
-		.center-section .wrap-search-form{
+
+		.center-section .wrap-search-form {
 			display: inline-block;
-			position: 
+			position:
 		}
+
+		* {
+			outline: 0;
+			box-sizing: border-box;
+		}
+
+		div {
+			display: block;
+			unicode-bidi: isolate;
+		}
+
+		body,
+		html {
+			-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+			-webkit-touch-callout: none;
+			min-height: 100%;
+			-webkit-text-size-adjust: 100%;
+			-ms-text-size-adjust: 100%;
+			-webkit-font-smoothing: antialiased;
+			-moz-osx-font-smoothing: grayscale;
+		}
+
+		body,
+		html {
+			font-size: 17px;
+			line-height: 1.8;
+			color: #333;
+			margin: 0;
+			padding: 0;
+			height: 100%;
+			width: 100%;
+		}
+
+		body {
+			font-family: "Ubuntu", Tahoma, Geneva, sans-serif;
+			font-weight: 400;
+			font-size: 15px;
+			line-height: 25px;
+			color: #9dabaf;
+			background-color: #f3f7f9;
+			letter-spacing: 0px;
+		}
+
+		.center-section .wrap-search-form {
+			display: inline-block;
+			/* border: 2px solid #0c861e; */
+			position: relative;
+			max-width: 740px;
+			width: 100%;
+			box-shadow: 0 0 15px 0 rgba(107, 107, 107, 0.7);
+		}
+
+		.flex-control-thumbs img.flex-active,
+		.wrap-product-detail .advance-info .tab-control a.active,
+		.wrap-product-detail .detail-info .quantity-input .btn:hover,
+		.wrap-product-detail .detail-info .wrap-butons .add-to-cart:hover,
+		.product-widget-style .thumbnnail a:hover img,
+		.choose-payment-methods .payment-method input[type=radio]:checked+span::before,
+		.wrap-demo-item-1:hover img,
+		.center-section .wrap-search-form {
+			border-color: #ff2832;
+		}
+
+		* {
+			outline: 0;
+		}
+
+		* {
+			-webkit-box-sizing: border-box;
+			-moz-box-sizing: border-box;
+			box-sizing: border-box;
+		}
+
+		div {
+			display: block;
+			unicode-bidi: isolate;
+		}
+
+		body,
+		html {
+			-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+			-webkit-touch-callout: none;
+			min-height: 100%;
+			-webkit-text-size-adjust: 100%;
+			-ms-text-size-adjust: 100%;
+			-webkit-font-smoothing: antialiased;
+			-moz-osx-font-smoothing: grayscale;
+		}
+
+		body,
+		html {
+			font-size: 17px;
+			line-height: 1.8;
+			color: #333;
+			margin: 0;
+			padding: 0;
+			height: 100%;
+			width: 100%;
+		}
+
+		body {
+			font-family: "Ubuntu", Tahoma, Geneva, sans-serif;
+			font-weight: 400;
+
+		}
+
+		* {
+			outline: 0;
+		}
+
+		* {
+
+			-moz-box-sizing: border-box;
+			box-sizing: border-box;
+		}
+
+		form {
+			display: block;
+			margin-top: 0em;
+			unicode-bidi: isolate;
+			margin-block-end: 1em;
+		}
+
+		body,
+		html {
+			-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+			-webkit-touch-callout: none;
+			min-height: 100%;
+			-webkit-text-size-adjust: 100%;
+			-ms-text-size-adjust: 100%;
+			-webkit-font-smoothing: antialiased;
+			-moz-osx-font-smoothing: grayscale;
+		}
+
+		body,
+		html {
+			font-size: 17px;
+			line-height: 1.8;
+			color: #333;
+			margin: 0;
+			padding: 0;
+			height: 100%;
+			width: 100%;
+		}
+
+
+		body {
+			font-family: "Ubuntu", Tahoma, Geneva, sans-serif;
+			font-weight: 400;
+
+			background-color: #f3f7f9;
+			letter-spacing: 0px;
+		}
+
+		button,
+		input,
+		select,
+		textarea {
+			font-size: 100%;
+		}
+
+		button,
+		input,
+		select,
+		textarea {
+			vertical-align: baseline;
+		}
+
+		button,
+		input,
+		optgroup,
+		select,
+		textarea {
+			margin: 0;
+
+			line-height: inherit;
+		}
+
+		.center-section .wrap-search-form input[name="search"] {
+			width: 100%;
+			float: left;
+			font-size: 15px;
+			color: #999999;
+			border: none;
+			padding: 0 20px;
+			height: 50px;
+			border-radius: 0px;
+		}
+
+		textarea,
+		input[type="text"],
+		input[type="password"],
+		input[type="datetime"],
+		input[type="datetime-local"],
+		input[type="date"],
+		input[type="month"],
+		input[type="time"],
+		input[type="week"],
+		input[type="number"],
+		input[type="email"],
+		input[type="url"],
+		input[type="search"],
+		input[type="tel"],
+		input[type="color"],
+		.uneditable-input,
+		select {
+			font-family: inherit;
+			vertical-align: middle;
+			font-weight: 400;
+			background-color: #fff;
+			text-transform: inherit;
+			outline: none;
+			line-height: inherit;
+			letter-spacing: 1px;
+
+		}
+
+		input:not([type="image" i], [type="range" i], [type="checkbox" i], [type="radio" i]) {
+			overflow-clip-margin: 0px !important;
+			overflow: clip !important;
+		}
+
+		input[type="text" i] {
+			padding-block: 1px;
+			padding-inline: 2px;
+		}
+
+		.ttm-btn.ttm-btn-size-md {
+			font-size: 13px;
+			padding: 13px 30px 13px 30px;
+		}
+
+		@media (min-width: 768px) {
+			.col-md-6 {
+				-ms-flex: 0 0 50%;
+				flex: 0 0 50%;
+				max-width: 50%;
+			}
+		}
+
+		auto {
+			position: relative;
+			width: 100%;
+			padding-right: 15px;
+			padding-left: 15px;
+		}
+
+		.mb-20 {
+			margin-bottom: 20px !important;
+		}
+
+		.mt-20 {
+			margin-top: 20px !important;
+		}
+		.footer {
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+.footer .ttm-textcolor-white {
+    color: rgba(255, 255, 255, .6);
+    line-height: 1.4;
+}
+.second-footer {
+    background-image: url(footer-bg.jpg);
+    background-color: transparent;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+}
+.ttm-textcolor-white, .ttm-btn.ttm-btn-color-white, .ttm-textcolor-white h1, .ttm-textcolor-white h2, .ttm-textcolor-white h3, .ttm-textcolor-white h4, .ttm-textcolor-white h5, .ttm-textcolor-white h6, .ttm-bgcolor-darkgrey h1, .ttm-bgcolor-darkgrey h2, .ttm-bgcolor-darkgrey h3, .ttm-bgcolor-darkgrey h4, .ttm-bgcolor-darkgrey h5, .ttm-bgcolor-darkgrey h6, .ttm-bgcolor-skincolor h1, .ttm-bgcolor-skincolor h2, .ttm-bgcolor-skincolor h3, .ttm-bgcolor-skincolor h4, .ttm-bgcolor-skincolor h5, .ttm-bgcolor-skincolor h6, .ttm-bgcolor-skincolor a, .ttm-textcolor-white a, .ttm-textcolor-white .ttm-social-links-wrapper ul li a, .ttm-btn-style-fill.ttm-btn-color-skincolor, .ttm-btn-style-fill.ttm-btn-color-skincolor:hover, .ttm-bgcolor-skincolor .ttm-btn.ttm-btn-color-white:hover, .ttm-btn.ttm-btn-style-fill.ttm-btn-color-black, .ttm-btn.ttm-btn-style-border.ttm-btn-color-black:hover, .ttm-btn.ttm-btn-style-border.ttm-btn-color-skincolor:hover, .ttm-fbar-position-right .ttm-fbar-btn a, #site-header-menu #site-navigation .menu > ul ul li.active > a, #site-header-menu #site-navigation .menu > ul ul li:hover > a, .ttm-header-style-infostack .ttm-header-icons .ttm-header-cart-link a, .ttm-header-style-infostack .ttm-header-icons .ttm-header-search-link a, .ttm-header-text-area .header-info-widget h3, .ttm-bgcolor-skincolor .section-title h2.title, .ttm-bgcolor-darkgrey .section-title h2.title, .ttm-bgcolor-skincolor .inside h4, .ttm-bgcolor-darkgrey .inside h4, .ttm-bgcolor-skincolor .ttm-fid-icon-wrapper i, .ttm-bgcolor-darkgrey .ttm-fid-icon-wrapper i, .ttm-bgcolor-skincolor .featured-title h5, .ttm-bgcolor-darkgrey .featured-title h5, .featured-icon-box.style4:hover .ttm-icon, .featured-icon-box.style4:hover .featured-title h5, .featured-icon-box.style4:hover .featured-desc, .featured-icon-box.style5:hover .ttm-icon, .featured-icon-box.style5:hover .ttm-btn.ttm-btn-color-white:hover, .featured-imagebox-team:hover .ttm-team-position, .featured-imagebox-team:hover .featured-title h5 a, .featured-imagebox-team .ttm-team-box-view-overlay .featured-title h5 a, .featured-imagebox-team:hover .ttm-team-box-view-overlay .featured-title h5 a, .featured-imagebox-team .ttm-team-box-view-overlay a, .testimonial-content blockquote:after, .ttm-post-format-icon, .ttm-box-post-date, .ttm_subscribe_form .btn[type="submit"], .footer .social-icons li > a:hover, .featured-imagebox-portfolio .featured-content .featured-title h5, .featured-imagebox-portfolio .featured-content .featured-title h5 a, .ttm-portfolio-box-view-overlay .category a:hover, .ttm-portfolio-box-view-overlay .featured-iconbox.ttm-media-link a, .accordion .ttm-style-classic .toggle-title, .accordion .toggle.ttm-style-classic .toggle-title a, .accordion .toggle.ttm-style-classic .toggle-title:after, .accordion .toggle.ttm-style-classic.ttm-toggle-title-bgcolor-grey.active a, .accordion .toggle.ttm-style-classic.ttm-toggle-title-bgcolor-grey.active .toggle-title:after, .calendar thead th, .calendar header .header-label, .bbpress-forums ul li.bbp-header, .ttm-testimonial-box-view-style3 .testimonial-content:before, .ttm-tabs ul.tabs li.active a, .calendar.small .calendar-frame tbody td:hover, .calendar.small .calendar-frame tbody td.today, .social-icons.circle li > a:hover, .widget.widget-nav-menu ul li.active a, .widget.widget-nav-menu ul li a:hover, .widget-nav-menu ul li.active::after, .widget-nav-menu ul li:hover:after, .sidebar .widget .tagcloud a:hover, .ttm-pagination .page-numbers.current, .ttm-pagination .page-numbers:hover, .ttm-tabs.ttm-tab-style-vertical ul.tabs li a, .ttm-pricing-plan .ttm-ptablebox-price, .ttm-pricing-plan .ttm-ptablebox-price, .ttm-pricing-plan .ttm-ptablebox-cur-symbol-before, .products .product .ttm-shop-icon a, div.product button.cart_button, .form-submit input, a.checkout-button, .ttm-sidebar-right .product-list-widget .price ins .product-Price-amount, .ttm-tabs.tabs-for-single-products ul.tabs li:hover a, #totop.top-visible, .label-new {
+   color: #fff; 
+}
+* {
+    outline: 0;
+}
+.footer .bottom-footer-text {
+    background-color: #013340;
+}
+*{
+	box-sizing: border-box;
+}
+.footer-map {
+    width: 400px;
+}
+@media (min-width: 992px){
+	    .col-lg-4 {
+        -ms-flex: 0 0 33.333333%;
+        flex: 0 0 33.333333%;
+        max-width: 33.333333%;
+    }
+}
+@media only screen and (max-width: 1366px) and (min-width: 1200px){
+	.second-footer > div > .row .widget-area:first-child .widget {
+        margin-right: 10px;
+    }
+}
+.footer .widget .widget-title {
+    margin-bottom: 25px;
+    display: inline-block;
+    font-weight: 500;
+}
+.widget .widget-title {
+    font-weight: 600;
+    font-size: 23px;
+    line-height: 28px;
+    margin-bottom: 25px;
+}
+* {
+    outline: 0;
+}
+.fa {
+    display: inline-block;
+    font: normal normal normal 14px / 1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+@media(min-width: 1200px){
+	    .container {
+        max-width: 1170px;
+    }
+}
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+footer .copyright {
+    background: #013340;
+    padding: 30px 0;
+}
 	</style>
 </head>
 
@@ -72,14 +413,61 @@
 					<!-- end col -->
 					<div class="col-lg-8 col-md-12 col-sm-12 col-12">
 						<div class="info-menu">
-							<ul>
-								<li><a href="#">Login </a></li>
-								<li><a href="#">Register </a></li>
-								<li><a href="#">Appinmnet </a></li>
-								<li><a href="#">Contact </a></li>
-							</ul>
+							<!-- 🔥 Hotline Floating Button -->
+							<div class="hotline-btn" onclick="window.location.href='tel:10606'">
+								Hotline<br>10606
+							</div>
+
+							<style>
+								.hotline-btn {
+									position: fixed;
+
+
+									top: 0px;
+									right: 0;
+									color: #fff;
+									font-weight: bold;
+									font-size: 18px;
+									padding: 12px 20px;
+
+									border-bottom-left-radius: 15px;
+									border-bottom-left-radius: 20px;
+									border-bottom-right-radius: 20px;
+
+									cursor: pointer;
+									z-index: 1000;
+									text-align: center;
+									animation: colorChange 0.5s infinite alternate,
+										glowEffect 0.5s infinite alternate;
+									transition: transform 0.1s ease;
+								}
+
+								/* 🔁 Color changing animation */
+								@keyframes colorChange {
+									100% {
+										background-color: #ff4500;
+									}
+
+									/* লাল */
+									0% {
+										background-color: #28a745;
+									}
+
+									/* সবুজ */
+								}
+
+								/* 💡 Glow effect animation */
+
+
+								.hotline-btn:hover {
+									transform: scale(1.08);
+								}
+							</style>
+
 						</div>
 					</div>
+					<!-- end col -->
+
 					<!-- end col -->
 				</div>
 			</div>
@@ -239,37 +627,43 @@
 				<div class="home-single-slide-inner">
 					<div class="auto-container">
 						<div class="row">
-							<div class="wrap-search center-section search__container">
-								<div class="wrap-search-form">
-									<form action="https://labaid.com.bd/en/search" method="POST" id="form-search-top"
-										name="form-search-top" class="ng-pristine ng-valid"
-										data-gtm-form-interact-id="0">
-										<input type="hidden" name="_token"
-											value="XKeCh6nrmORNHhtFLZWMU4H44H7LThp9C4uTDL0X" autocomplete="off">
-										<input type="text" name="search"
-											placeholder="Search For Doctor/Department/Any Thing..."
-											data-gtm-form-interact-field-id="0">
-										<button form="form-search-top" type="submit">
-											<i class="fa fa-search" aria-hidden="true">
+							<div class="col-md-2">
+							</div>
+							<div class="col-md-8">
+								<div class="wrap-search center-section search__container">
+									<div class="wrap-search-form">
+										<form action="https://labaid.com.bd/en/search" method="POST"
+											id="form-search-top" name="form-search-top" class="ng-pristine ng-valid">
+											<input type="hidden" name="_token"
+												value="3w5VjJkTD7s3cVAMBOLRnECjaVCO19WyCxokM0Ob" autocomplete="off">
+											<input type="text" name="search"
+												placeholder="Search For Doctor/Department/Any Thing...">
 
-											</i>
-										</button>
-										<div class="wrap-list-cate">
-											<select name="type" class="form-control"required>
-												<option value="0">-- Select Option --</option>
-												<option value="doctor"> Doctor</option>
-												<option value="department">  Department</option>
-												<option value="hospital"> Department</option>
-												<option value="diagnostic"> Diagnostics</option>
-												<option value="package"> Packages</option>
-												<option value="news"> News</option>
-											</select>
-										</div>
-									</form>
+											<button form="form-search-top" type="submit">
+												<i class="fa fa-search" aria-hidden="true"></i>
+											</button>
+											<div class="wrap-list-cate">
+
+												<select name="type" class="form-control" required="">
+													<option value="0">-- Select Option --</option>
+													<option value="doctor"> Doctor</option>
+													<option value="department"> Department</option>
+													<option value="hospital"> Hospitals</option>
+													<option value="diagnostic"> Diagnostics</option>
+													<option value="package"> Packages</option>
+													<option value="news"> News</option>
+												</select>
+											</div>
+										</form>
+									</div>
 								</div>
+							</div>
+							<div class="col-md-2">
 							</div>
 							<div class="col-lg-7 col-md-8 col-sm-8 col-12">
 								<div class="home-single-slide-dec">
+
+
 
 
 
@@ -348,37 +742,361 @@
 
 
 	<!-- START LOGO AREA -->
-	<div class="logo-area">
-		<div class="auto-container">
+
+	<!-- END LOGO AREA -->
+	<div class="container mt-20 mb-20">
+		<div class="row">
+			<div class="col-lg-6 col-sm-12">
+				<div class="res-991-pl-0"><!-- section title -->
+					<div style="margin-top: 85px;">
+						<h2>NABH ACCREDITATION</h2>
+						<p>Labaid Cardiac Hospital (2019)</p>
+						<p>Labaid Specialized Hospital (2022)</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-6 col-sm-12"><!-- ttm_single_image-wrapper -->
+				<div class="ttm_single_image-wrapper text-right">
+					<img class="img-fluid fr-fic fr-dii" src="https://labaid.com.bd/files/images/1681117815.jpg" alt="">
+				</div>
+				<!-- ttm_single_image-wrapper end -->
+			</div>
+			<div class="col-md-6">
+				<a class="ttm-btn ttm-btn-size-md ttm-btn-shape-square ttm-btn-style-fill ttm-btn-color-skincolor"
+					href="https://labaid.com.bd/en/about/nabh-accredited">MORE ABOUT</a>
+			</div>
+
+		</div>
+
+	</div>
+	<section class="service-section ttm-bgcolor-grey clearfix about--us">
+		<div class="container  mt-100 mb-50">
 			<div class="row">
-				<div class="col-lg-3 col-md-3 col-sm-6 col-7 mx-md-auto mx-sm-auto mx-auto pl-0">
-					<div class="logo">
-						<a href="index.html">
-							<img class="img-fluid" src="assets/img/logo.png" alt="">
-						</a>
+				<div class="col-lg-6 col-sm-12">
+					<!-- ttm_single_image-wrapper -->
+					<div class="ttm_single_image-wrapper text-right p-3">
+						<img class="img-fluid fr-fic fr-dii" src="https://labaid.com.bd/files/images/1614232110.jpg"
+							alt="#">
+					</div>
+					<!-- ttm_single_image-wrapper end -->
+				</div>
+				<div class="col-lg-6 col-sm-12">
+					<div class="p-3 res-991-pl-0 text-justify">
+						<!-- section title -->
+						<div class="section-title clearfix">
+							<div class="title-header">
+								<h2 class="title">For Bangladesh<br>By Bangladesh</h2>
+							</div>
+						</div><!-- section title end -->
+						<div class="mb-25 clearfix">
+							<p>Labaid is one of the largest and most recognized private healthcare brands in Bangladesh.
+								Known for its pioneering works in setting-up the first super-specialty Cardiac hospital
+								in the country, Labaid is also widely acknowledged for bringing high quality diagnostic
+								and specialized consultation facilities under a single roof through its now ubiquitous
+								centers in all corners of Bangladesh, around 3 million annual patient encounters, nearly
+								8,000 employees, and around 1000 top- notch consultant physicians countrywide.</p>
+						</div>
 					</div>
 				</div>
-				<!-- end col -->
-				<div class="col-lg-9 col-md-12 col-sm-12 col-12">
-					<div class="header-info-box">
-						<div class="header-info-icon"><span class="lnr lnr-phone-handset"></span></div>
-						<p>Customer support & sales</p>
-						<h6>123-456-0975</h6>
-					</div>
-					<div class="header-info-box">
-						<div class="header-info-icon"><span class="lnr lnr-map-marker"></span></div>
-						<p>Opening hours</p>
-						<h6>Mon - Sun : 09:00 - 18:00</h6>
-					</div>
-					<div class="header-info-box">
-						<a class="header-quote-btn" href="#">Get a Quote <i class="icofont icofont-caret-right"></i></a>
+
+				<div class="offset-md-6 col-md-6 col-xs-12">
+					<a class="ttm-btn ttm-btn-size-md ttm-btn-shape-square ttm-btn-style-fill ttm-btn-color-skincolor m-3"
+						href="https://labaid.com.bd/en/about/about-labaid">MORE ABOUT</a>
+				</div>
+			</div>
+
+		</div>
+		<div class="container mt-20 mb-20">
+			<!-- row -->
+			<div class="row">
+				<div class="col-md-9">
+					<!-- section-title -->
+					<div class="section-title with-desc clearfix">
+						<div class="title-header">
+							<h5>WHAT WE DO</h5>
+							<h2 class="title">Major Disciplines</h2>
+						</div>
+					</div><!-- section-title end -->
+				</div>
+				<div class="col-md-3">
+					<a class="ttm-btn ttm-btn-size-md ttm-btn-shape-square ttm-btn-style-border ttm-btn-color-black mb-30 mt-45 res-991-mt-0 float-right"
+						href="https://labaid.com.bd/en/departments">ALL DEPARTMENTS</a>
+				</div>
+			</div><!-- row end -->
+			<div class="row">
+				<div class="col-lg-12">
+					<div
+						class="row row-equal-height ttm-bgcolor-white ttm-box-seperator ttm-row-seperator box-shadow mt-20">
+						<div class="col-lg-3 col-6 col-md-3 col-xs-12">
+							<a href="https://labaid.com.bd/en/department/accident-and-emergency">
+								<!-- featured-icon-box -->
+
+							</a>
+							<div class="featured-icon-box top-icon featured-icon-hover"><a
+									href="https://labaid.com.bd/en/department/accident-and-emergency">
+									<div class="featured-icon">
+										<div class="ttm-icon ttm-icon_element-color-skincolor ttm-icon_element-size-lg">
+											<img class="img-responsive"
+												src="https://labaid.com.bd/files/images/1584506216.png" alt="">
+										</div>
+									</div>
+								</a>
+								<div class="featured-content"><a
+										href="https://labaid.com.bd/en/department/accident-and-emergency">
+									</a>
+									<div class="featured-title" style="height: 60px"><a
+											href="https://labaid.com.bd/en/department/accident-and-emergency">
+										</a><a href="https://labaid.com.bd/en/department/accident-and-emergency">
+											<h5 class="department_text">Accident And Emergency</h5>
+										</a>
+									</div>
+									<div class="featured-desc">
+										<p>
+											The department of emergency medicine at Labaid Hospital , which work as the
+											quick response team , is ....
+										</p>
+									</div>
+								</div>
+							</div><!-- featured-icon-box end-->
+
+						</div>
+						<div class="col-lg-3 col-6 col-md-3 col-xs-12">
+							<a href="https://labaid.com.bd/en/department/anaesthesiology1">
+								<!-- featured-icon-box -->
+
+							</a>
+							<div class="featured-icon-box top-icon featured-icon-hover"><a
+									href="https://labaid.com.bd/en/department/anaesthesiology1">
+									<div class="featured-icon">
+										<div class="ttm-icon ttm-icon_element-color-skincolor ttm-icon_element-size-lg">
+											<img class="img-responsive"
+												src="https://labaid.com.bd/files/images/1584506235.png" alt="">
+										</div>
+									</div>
+								</a>
+								<div class="featured-content"><a
+										href="https://labaid.com.bd/en/department/anaesthesiology1">
+									</a>
+									<div class="featured-title" style="height: 60px"><a
+											href="https://labaid.com.bd/en/department/anaesthesiology1">
+										</a><a href="https://labaid.com.bd/en/department/anaesthesiology1">
+											<h5 class="department_text">Anaesthesiology</h5>
+										</a>
+									</div>
+									<div class="featured-desc">
+										<p>
+											We make sure that your surgical procedure as safe, comfortable and efficient
+											as possible. An integra ....
+										</p>
+									</div>
+								</div>
+							</div><!-- featured-icon-box end-->
+
+						</div>
+						<div class="col-lg-3 col-6 col-md-3 col-xs-12">
+							<a href="https://labaid.com.bd/en/department/burn-and-plastic">
+								<!-- featured-icon-box -->
+
+							</a>
+							<div class="featured-icon-box top-icon featured-icon-hover"><a
+									href="https://labaid.com.bd/en/department/burn-and-plastic">
+									<div class="featured-icon">
+										<div class="ttm-icon ttm-icon_element-color-skincolor ttm-icon_element-size-lg">
+											<img class="img-responsive"
+												src="https://labaid.com.bd/files/images/1580793227.png" alt="">
+										</div>
+									</div>
+								</a>
+								<div class="featured-content"><a
+										href="https://labaid.com.bd/en/department/burn-and-plastic">
+									</a>
+									<div class="featured-title" style="height: 60px"><a
+											href="https://labaid.com.bd/en/department/burn-and-plastic">
+										</a><a href="https://labaid.com.bd/en/department/burn-and-plastic">
+											<h5 class="department_text">Burn &amp; Plastic Surgery</h5>
+										</a>
+									</div>
+									<div class="featured-desc">
+										<p>
+											Department of Burn, Plastic and Cosmetic Surgery of Labaid Hospitals Dhaka
+											provides exceptional and ....
+										</p>
+									</div>
+								</div>
+							</div><!-- featured-icon-box end-->
+
+						</div>
+						<div class="col-lg-3 col-6 col-md-3 col-xs-12">
+							<a href="https://labaid.com.bd/en/department/cardiothoracic-and-vascular-surgery">
+								<!-- featured-icon-box -->
+
+							</a>
+							<div class="featured-icon-box top-icon featured-icon-hover"><a
+									href="https://labaid.com.bd/en/department/cardiothoracic-and-vascular-surgery">
+									<div class="featured-icon">
+										<div class="ttm-icon ttm-icon_element-color-skincolor ttm-icon_element-size-lg">
+											<img class="img-responsive"
+												src="https://labaid.com.bd/files/images/1584506263.png" alt="">
+										</div>
+									</div>
+								</a>
+								<div class="featured-content"><a
+										href="https://labaid.com.bd/en/department/cardiothoracic-and-vascular-surgery">
+									</a>
+									<div class="featured-title" style="height: 60px"><a
+											href="https://labaid.com.bd/en/department/cardiothoracic-and-vascular-surgery">
+										</a><a
+											href="https://labaid.com.bd/en/department/cardiothoracic-and-vascular-surgery">
+											<h5 class="department_text">Cardiothoracic And Vascular Surgery</h5>
+										</a>
+									</div>
+									<div class="featured-desc">
+										<p>
+											We believe you deserve nothing less than the very best in cardiovascular
+											care. That&amp;rsquo;s why Laba ....
+										</p>
+									</div>
+								</div>
+							</div><!-- featured-icon-box end-->
+
+						</div>
+						<div class="col-lg-3 col-6 col-md-3 col-xs-12">
+							<a href="https://labaid.com.bd/en/department/cath-lab-department">
+								<!-- featured-icon-box -->
+
+							</a>
+							<div class="featured-icon-box top-icon featured-icon-hover"><a
+									href="https://labaid.com.bd/en/department/cath-lab-department">
+									<div class="featured-icon">
+										<div class="ttm-icon ttm-icon_element-color-skincolor ttm-icon_element-size-lg">
+											<img class="img-responsive"
+												src="https://labaid.com.bd/files/images/1584506279.png" alt="">
+										</div>
+									</div>
+								</a>
+								<div class="featured-content"><a
+										href="https://labaid.com.bd/en/department/cath-lab-department">
+									</a>
+									<div class="featured-title" style="height: 60px"><a
+											href="https://labaid.com.bd/en/department/cath-lab-department">
+										</a><a href="https://labaid.com.bd/en/department/cath-lab-department">
+											<h5 class="department_text">Cath Lab</h5>
+										</a>
+									</div>
+									<div class="featured-desc">
+										<p>
+											Labaid hospital provides an inclusive treatment plan for managing various
+											heart conditions including ....
+										</p>
+									</div>
+								</div>
+							</div><!-- featured-icon-box end-->
+
+						</div>
+						<div class="col-lg-3 col-6 col-md-3 col-xs-12">
+							<a href="https://labaid.com.bd/en/department/chemotherapy">
+								<!-- featured-icon-box -->
+
+							</a>
+							<div class="featured-icon-box top-icon featured-icon-hover"><a
+									href="https://labaid.com.bd/en/department/chemotherapy">
+									<div class="featured-icon">
+										<div class="ttm-icon ttm-icon_element-color-skincolor ttm-icon_element-size-lg">
+											<img class="img-responsive"
+												src="https://labaid.com.bd/files/images/1584506317.png" alt="">
+										</div>
+									</div>
+								</a>
+								<div class="featured-content"><a
+										href="https://labaid.com.bd/en/department/chemotherapy">
+									</a>
+									<div class="featured-title" style="height: 60px"><a
+											href="https://labaid.com.bd/en/department/chemotherapy">
+										</a><a href="https://labaid.com.bd/en/department/chemotherapy">
+											<h5 class="department_text">Chemotherapy</h5>
+										</a>
+									</div>
+									<div class="featured-desc">
+										<p>
+											Labaid offers world-class care at our state-of-the-art facilities for
+											treatment of all types of canc ....
+										</p>
+									</div>
+								</div>
+							</div><!-- featured-icon-box end-->
+
+						</div>
+						<div class="col-lg-3 col-6 col-md-3 col-xs-12">
+							<a href="https://labaid.com.bd/en/department/colorectal-surgery">
+								<!-- featured-icon-box -->
+
+							</a>
+							<div class="featured-icon-box top-icon featured-icon-hover"><a
+									href="https://labaid.com.bd/en/department/colorectal-surgery">
+									<div class="featured-icon">
+										<div class="ttm-icon ttm-icon_element-color-skincolor ttm-icon_element-size-lg">
+											<img class="img-responsive"
+												src="https://labaid.com.bd/files/images/1580793277.png" alt="">
+										</div>
+									</div>
+								</a>
+								<div class="featured-content"><a
+										href="https://labaid.com.bd/en/department/colorectal-surgery">
+									</a>
+									<div class="featured-title" style="height: 60px"><a
+											href="https://labaid.com.bd/en/department/colorectal-surgery">
+										</a><a href="https://labaid.com.bd/en/department/colorectal-surgery">
+											<h5 class="department_text">Colorectal Surgery</h5>
+										</a>
+									</div>
+									<div class="featured-desc">
+										<p>
+											Colorectal surgery is a medical operation that is performed on the colon,
+											rectum and anus. Colorecta ....
+										</p>
+									</div>
+								</div>
+							</div><!-- featured-icon-box end-->
+
+						</div>
+						<div class="col-lg-3 col-6 col-md-3 col-xs-12">
+							<a href="https://labaid.com.bd/en/department/ccu-department">
+								<!-- featured-icon-box -->
+
+							</a>
+							<div class="featured-icon-box top-icon featured-icon-hover"><a
+									href="https://labaid.com.bd/en/department/ccu-department">
+									<div class="featured-icon">
+										<div class="ttm-icon ttm-icon_element-color-skincolor ttm-icon_element-size-lg">
+											<img class="img-responsive"
+												src="https://labaid.com.bd/files/images/1584506302.png" alt="">
+										</div>
+									</div>
+								</a>
+								<div class="featured-content"><a
+										href="https://labaid.com.bd/en/department/ccu-department">
+									</a>
+									<div class="featured-title" style="height: 60px"><a
+											href="https://labaid.com.bd/en/department/ccu-department">
+										</a><a href="https://labaid.com.bd/en/department/ccu-department">
+											<h5 class="department_text">Coronary Care Unit - CCU</h5>
+										</a>
+									</div>
+									<div class="featured-desc">
+										<p>
+											A cardiac care unit (CCU) is a specialized hospital ward designed to treat
+											people with serious or ac ....
+										</p>
+									</div>
+								</div>
+							</div><!-- featured-icon-box end-->
+
+						</div>
 					</div>
 				</div>
-				<!-- end col -->
 			</div>
 		</div>
-	</div>
-	<!-- END LOGO AREA -->
+	</section>
 
 
 	<!-- START ABOUT SECTION -->
@@ -812,11 +1530,8 @@
 				<div class="row">
 					<div class="col-lg-7 text-center mx-auto">
 						<div class="section-title">
-							<h3>Cleveland <span>Gallery</span></h3>
-							<span class="line"></span>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-								ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-								ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+							<h3>Doctor's Talk</h3>
+
 						</div>
 					</div>
 					<!-- end section title -->
@@ -826,29 +1541,13 @@
 				<div class="portfolio-slider owl-carousel owl-theme">
 					<div class="single-gallery-item">
 						<div class="single-gallery single-gallery-first">
-							<img class="img-fluid" src="assets/img/gallery/1.jpg" alt="" />
+							<img class="img-fluid" src="H1592866.jpg" alt="" />
 							<div class="single-gallery">
 								<div class="single-gallery-inner">
-									<h5>Gallery Title</h5>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing.</p>
+									<h5>Click On</h5>
+
 									<a href="#" class="info"><i class="icofont icofont-link"></i></a>
-									<a href="assets/img/gallery/1.jpg" class="venobox info"
-										data-title="PORTFOLIO TITTLE" data-gall="gall1"><i
-											class="icofont icofont-expand"></i></a>
-								</div>
-							</div>
-						</div>
-					</div>
-					<!-- end single portfolio -->
-					<div class="single-gallery-item">
-						<div class="single-gallery single-gallery-first">
-							<img class="img-fluid" src="assets/img/gallery/4.jpg" alt="" />
-							<div class="single-gallery">
-								<div class="single-gallery-inner">
-									<h5>Youtube Demo</h5>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing.</p>
-									<a href="#" class="info"><i class="icofont icofont-link"></i></a>
-									<a href="https://www.youtube.com/watch?v=U6tSjIAGaTU"
+									<a href="https://www.youtube.com/watch?v=kpRgMjdWMEI&amp;t=17s&nbsp;"
 										data-title="PORTFOLIO YOUTUBE VIDEO" data-vbtype="youtube"
 										class="venobox info vbox-item" data-gall="gall1"><i
 											class="icofont icofont-expand"></i></a>
@@ -860,15 +1559,16 @@
 					<!-- end single portfolio -->
 					<div class="single-gallery-item">
 						<div class="single-gallery single-gallery-first">
-							<img class="img-fluid" src="assets/img/gallery/3.jpg" alt="" />
+							<img class="img-fluid" src="h2593254.jpg" alt="" />
 							<div class="single-gallery">
 								<div class="single-gallery-inner">
-									<h5>Vimeo Demo</h5>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing.</p>
+									<h5>Click On</h5>
 									<a href="#" class="info"><i class="icofont icofont-link"></i></a>
-									<a href="https://vimeo.com/75976293" class="venobox info vbox-item"
-										data-autoplay="true" data-title="PORTFOLIO VIMEO VIDEO" data-vbtype="vimeo"
-										data-gall="gall1"><i class="icofont icofont-expand"></i></a>
+									<a href="https://www.youtube.com/watch?v=kpRgMjdWMEI&amp;t=17s&nbsp;"
+										data-title="PORTFOLIO YOUTUBE VIDEO" data-vbtype="youtube"
+										class="venobox info vbox-item" data-gall="gall1"><i
+											class="icofont icofont-expand"></i></a>
+
 								</div>
 							</div>
 						</div>
@@ -876,14 +1576,31 @@
 					<!-- end single portfolio -->
 					<div class="single-gallery-item">
 						<div class="single-gallery single-gallery-first">
-							<img class="img-fluid" src="assets/img/gallery/5.jpg" alt="" />
+							<img class="img-fluid" src="h3711.jpg" alt="" />
 							<div class="single-gallery">
 								<div class="single-gallery-inner">
-									<h5>Gallery Title</h5>
+									<h5>Vimeo Demo</h5>
 									<p>Lorem ipsum dolor sit amet, consectetur adipiscing.</p>
 									<a href="#" class="info"><i class="icofont icofont-link"></i></a>
-									<a href="assets/img/gallery/5.jpg" class="venobox info"
-										data-title="PORTFOLIO TITTLE" data-gall="gall1"><i
+									<a href="https://youtu.be/rBYh1cWY1vY" data-title="PORTFOLIO YOUTUBE VIDEO"
+										data-vbtype="youtube" class="venobox info vbox-item" data-gall="gall1"><i
+											class="icofont icofont-expand"></i></a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- end single portfolio -->
+					<div class="single-gallery-item">
+						<div class="single-gallery single-gallery-first">
+							<img class="img-fluid" src="1584h42759.jpg" alt="" />
+							<div class="single-gallery">
+								<div class="single-gallery-inner">
+									<h5>Click On</h5>
+
+									<a href="#" class="info"><i class="icofont icofont-link"></i></a>
+									<a href="https://www.youtube.com/watch?v=vgdF0sLd58U&amp;t=77s&nbsp;"
+										data-title="PORTFOLIO YOUTUBE VIDEO" data-vbtype="youtube"
+										class="venobox info vbox-item" data-gall="gall1"><i
 											class="icofont icofont-expand"></i></a>
 								</div>
 							</div>
@@ -1048,7 +1765,6 @@
 	</section>
 	<!-- END SERVICE SECTION -->
 
-
 	<!-- START DOCTOR SECTION -->
 	<section id="doctor" class="section-padding bg-gray">
 		<div class="container">
@@ -1057,9 +1773,7 @@
 					<div class="section-title">
 						<h3>Our<span> Specialities</span></h3>
 						<span class="line"></span>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-							labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-							laboris nisi ut aliquip ex ea commodo consequat.</p>
+
 					</div>
 				</div>
 				<!-- end section title -->
@@ -1067,15 +1781,24 @@
 			<div class="row">
 				<div class="team-slider owl-carousel owl-theme">
 					<div class="single-doctor single-doctor-warp">
-						<img class="img-fluid" src="assets/img/team/1.jpg" alt="" />
+						<img class="img-fluid" src="1611552680.png" alt="" />
 						<div class="single-doctor-info">
-							<h4>Stevest Henry</h4>
-							<span>Ophthalmologist</span>
+							<h4>Dr. Mohammad Moniruzzaman</h4>
+							<span>Kidney Diseases & Medicine Specialist Associate Professor & Head of the Dept. (Ex.),
+								Nephrology,Consultant</span>
 						</div>
 						<div class="single-doctor-mask">
 							<div class="single-doctor-mask-inner">
-								<h5>About Doctor</h5>
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+								<h5>Dr. Mohammad Moniruzzaman</h5>
+								<p>
+								<H2>Speciality</H2>
+								MBBS, MS (CV & TS), FACS (USA)
+
+								Cardiac Surgeon
+
+								Senior Consultant, Cardiac Surgery Dept.
+
+								LABAID Cardiac Hospital</p>
 								<ul>
 									<li><a href="#">Get Appointment</a></li>
 								</ul>
@@ -1084,15 +1807,28 @@
 					</div>
 					<!-- end single doctor -->
 					<div class="single-doctor single-doctor-warp">
-						<img class="img-fluid" src="assets/img/team/2.jpg" alt="" />
+						<img class="img-fluid" src="F183184.jpg" alt="" />
 						<div class="single-doctor-info">
-							<h4>Williums Kevins</h4>
-							<span>Dermatologist</span>
+							<h4>Professor Dr. Kazi Mohibur Rahman</h4>
+							<span>Neuro Medicine & Stroke Interventional Neurology Specialist, Professor & Head of Dept.
+								of Interventional Neurology</span>
 						</div>
 						<div class="single-doctor-mask">
 							<div class="single-doctor-mask-inner">
-								<h5>About Doctor</h5>
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+								<h5>Professor Dr. Kazi Mohibur Rahman</h5>
+								<p>
+								<H2>Speciality</H2>
+								MBBS, MD (Neurology)
+
+								Fellow, Interventional Neurology & Stroke Therapy (India)
+
+								Neuro Medicine & Stroke Interventional Neurology Specialist
+
+								Professor & Head of Dept. of Interventional Neurology
+
+								National Institute of Neurosciences & Hospital (NINS)
+
+								Labaid Cardiac Hospital</p>
 								<ul>
 									<li><a href="#">Get Appointment</a></li>
 								</ul>
@@ -1101,15 +1837,28 @@
 					</div>
 					<!-- end single doctor -->
 					<div class="single-doctor single-doctor-warp">
-						<img class="img-fluid" src="assets/img/team/3.jpg" alt="" />
+						<img class="img-fluid" src="F20951.jpg" alt="" />
 						<div class="single-doctor-info">
-							<h4>Kewillues Jenifer</h4>
-							<span>Radiologist</span>
+							<h4>Professor. (Dr.) Md. Abdul Kader Akanda</h4>
+							<span>Medicine Specialist & Cardiologist Clinical & Interventional Cardiologist Professor &
+								Head of the Department, Cardiology (Ret)</span>
 						</div>
 						<div class="single-doctor-mask">
 							<div class="single-doctor-mask-inner">
-								<h5>About Doctor</h5>
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+								<h5>Professor. (Dr.) Md. Abdul Kader Akanda</h5>
+								<p>
+								<H2>Speciality</H2>
+								MBBS, FCPS (Medicine), MD (Cardiology), FACC (USA)
+
+								Medicine Specialist & Cardiologist
+
+								Clinical & Interventional Cardiologist
+
+								Professor & Head of the Department, Cardiology (Ret)
+
+								Sir Salimullah Medical College & Mitford Hospital, Dhaka
+
+								Labaid Specialized Hospital</p>
 								<ul>
 									<li><a href="#">Get Appointment</a></li>
 								</ul>
@@ -1118,15 +1867,25 @@
 					</div>
 					<!-- end single doctor -->
 					<div class="single-doctor single-doctor-warp">
-						<img class="img-fluid" src="assets/img/team/4.jpg" alt="" />
+						<img class="img-fluid" src="F380662.jpg" alt="" />
 						<div class="single-doctor-info">
-							<h4>Marquis Williums</h4>
-							<span>Urologist</span>
+							<h4>Professor. DR. MOUDUDUL HAQUE</h4>
+							<span>Professor, Department of Neurosurgery</span>
 						</div>
 						<div class="single-doctor-mask">
 							<div class="single-doctor-mask-inner">
-								<h5>About Doctor</h5>
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+								<h5>Professor. DR. MOUDUDUL HAQUE</h5>
+								<p>
+								<H2>Speciality</H2>
+								MBBS, MD, PhD (MS), Neurosurgery
+
+								Brain Tumor, Stroke, Spine Specialist & Surgeon
+
+								Professor, Department of Neurosurgery
+
+								Bangabandhu Sheikh Mujib Medical University (BSMMU)
+
+								Labaid Specialized Hospital </p>
 								<ul>
 									<li><a href="#">Get Appointment</a></li>
 								</ul>
@@ -1135,15 +1894,80 @@
 					</div>
 					<!-- end single doctor -->
 					<div class="single-doctor single-doctor-warp">
-						<img class="img-fluid" src="assets/img/team/5.jpg" alt="" />
+						<img class="img-fluid" src="F482897.jpg" alt="" />
 						<div class="single-doctor-info">
-							<h4>Revenna Warner</h4>
-							<span>Neurologist</span>
+							<h4>Professor Dr. Sirajul Haque</h4>
+							<span>Specialist in Neurology & Internal Medicine, Chief Consultant</span>
 						</div>
 						<div class="single-doctor-mask">
 							<div class="single-doctor-mask-inner">
-								<h5>About Doctor</h5>
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+								<h5>Professor Dr. Sirajul Haque</h5>
+								<p>
+								<H2>Speciality</H2>
+								MBBS, FCPS (Medicine), FACP (USA), FRCP (Edin)
+
+								Specialist in Neurology & Internal Medicine
+
+								Chief Consultant, Dept. of Neurology
+
+								LABAID Specialized Hospital </p>
+								<ul>
+									<li><a href="#">Get Appointment</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<!-- end single doctor -->
+					<!-- end single doctor -->
+					<div class="single-doctor single-doctor-warp">
+						<img class="img-fluid" src="F582852.jpg" alt="" />
+						<div class="single-doctor-info">
+							<h4>Professor (Dr.) Md. Shahidullah (Sabuj)</h4>
+							<span>Stroke Neurologist Professor, Dept. of Neuromedicine</span>
+						</div>
+						<div class="single-doctor-mask">
+							<div class="single-doctor-mask-inner">
+								<h5>Professor (Dr.) Md. Shahidullah (Sabuj)</h5>
+								<p>
+								<H2>Speciality</H2>MBBS, FCPS (Medicine), MD (Neurology)
+
+								Fellow in Interventional Neurology & Stroke ( New Delhi)
+
+								Stroke Neurologist
+
+								Professor, Dept. of Neuromedicine
+
+								Bangabandhu Sheikh Mujib Medical University (BSMMU)
+
+								Labaid Cardiac Hospital </p>
+								<ul>
+									<li><a href="#">Get Appointment</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<!-- end single doctor -->
+					<!-- end single doctor -->
+					<div class="single-doctor single-doctor-warp">
+						<img class="img-fluid" src="F6982727.jpg" alt="" />
+						<div class="single-doctor-info">
+							<h4>Professor. (Dr.) F. M. Siddiqui</h4>
+							<span>Medicine & Chest specialist Professor, Medicine</span>
+						</div>
+						<div class="single-doctor-mask">
+							<div class="single-doctor-mask-inner">
+								<h5>Professor. (Dr.) F. M. Siddiqui</h5>
+								<p>
+								<H2>Speciality</H2>
+								MBBS, FCPS, FACP (USA), FRCP
+
+								Commonwealth Medical Fellow (England)
+
+								Medicine & Chest specialist
+
+								Professor, Medicine
+
+								LABAID Cardiac Hospital </p>
 								<ul>
 									<li><a href="#">Get Appointment</a></li>
 								</ul>
@@ -1483,132 +2307,75 @@
 
 
 	<!-- START FOOTER -->
-	<footer>
-		<!--Footer top -->
-		<div class="footer-top overlay-2 section-back-image-2" data-background="assets/img/bg/counter-bg.jpg">
-			<div class="auto-container">
-				<div class="row">
-					<div class="col-lg-3 col-md-6 col-sm-12 col-12  mb-lg-0 mb-md-4 mb-sm-5 mb-5 footer-widget">
-						<div class="footer-section-title col-12 p-0 mb-4">
-							<h5>About Us</h5>
-						</div>
-						<!-- end widget title -->
-						<div class="about">
-							<p>Cleveland Hospitals is one of the most multi-specialty healthcare provider catering to
-								both native & foreigner patients.</p>
-							<p>Manage your health the easier way with the Cleveland Hospital mobile app. Download it
-								today! Available on.</p>
-						</div>
-						<div class="footer-logo">
-							<a href="#">
-								<img class="img-fluid" src="assets/img/app-google.png" alt="">
-							</a>
-							<a href="#">
-								<img class="img-fluid" src="assets/img/app-apple.png" alt="">
-							</a>
-						</div>
-					</div>
-					<!-- End Widget -->
-					<div class="col-lg-3 col-md-6 col-sm-12 col-12  mb-lg-0 mb-md-4 mb-sm-5 mb-5 footer-widget">
-						<div class="footer-section-title col-12 p-0 mb-4">
-							<h5>Our Associates</h5>
-						</div>
-						<!-- end widget title -->
-						<ul class="quick-link-list">
-							<li><a href="#">Education</a></li>
-							<li><a href="#">Research</a></li>
-							<li><a href="#">Healthcare Services</a></li>
-							<li><a href="#">Cleveland Foundation</a></li>
-						</ul>
-						<div class="footer-section-title col-12 p-0 mt-4 mb-4">
-							<h5>Get Connected</h5>
-						</div>
-						<!-- end widget title -->
-						<div class="footer-social">
-							<ul>
-								<li><a href="#"><i class="icofont icofont-social-facebook"></i></a></li>
-								<li><a href="#"><i class="icofont icofont-social-twitter"></i></a></li>
-								<li><a href="#"><i class="icofont icofont-social-youtube-play"></i></a></li>
-								<li><a href="#"><i class="icofont icofont-social-google-plus"></i></a></li>
-							</ul>
-						</div>
-					</div>
-					<!-- End Widget -->
-					<div class="col-lg-3 col-md-6 col-sm-12 col-12  mb-lg-0 mb-md-0 mb-sm-5 mb-5 footer-widget">
-						<div class="footer-section-title col-12 p-0 mb-4">
-							<h5>What's new</h5>
-						</div>
-						<!-- end widget title -->
-						<div class="single-wn-slider owl-carousel owl-theme">
-							<div class="single-wn-item">
-								<p>How to Prevent Eye Injuries?</p>
-								<p>People at work are equally at risk of eye injuries as those at home. Fortunately, 90
-									percent of all eye injuries are preventable. Learn how to prevent eye injuries.</p>
-							</div>
-							<div class="single-wn-item">
-								<p>Need To Know About Scoliosis?</p>
-								<p>Scoliosis is a sideward bend of the spine which usually occurs in children, but can
-									also sometimes affect adults. A normal spine is curved on the top of the shoulder.
-								</p>
-							</div>
-						</div>
-						<a class="wn-readm" href="#">Know more</a>
-					</div>
-					<!-- End Widget -->
-					<div class="col-lg-3 col-md-6 col-sm-12 col-12 footer-widget">
-						<div class="footer-section-title col-12 p-0 mb-4">
-							<h5>Stay With us</h5>
-						</div>
-						<!-- end widget title -->
-						<ul class="quick-link-list">
-							<li><a href="#"><i class="lnr lnr-map-marker"></i> 10004, Battery Park, New York</a></li>
-							<li><a href="#"><i class="lnr lnr-envelope "></i> info@yoursite.com</a></li>
-							<li><a href="#"><i class="lnr lnr-phone "></i> +0 123-456-7890</a></li>
-							<li><a href="#"><i class="icofont icofont-clock-time"></i> Open: Mon to Sat: 9AM to 5PM</a>
-							</li>
-						</ul>
-						<div class="footer-section-title col-12 p-0 mt-4 mb-4">
-							<h5>Get Updated</h5>
-						</div>
-						<!-- end widget title -->
-						<div class="foo-news">
-							<form action="#" method="post">
-								<div class="row m-0">
-									<div class="form-group col-lg-10 col-md-10 col-sm-10 col-10 p-0">
-										<input name="fnews" type="email" class="form-control"
-											placeholder="Your email here...">
-									</div>
-									<div class="form-group col-lg-2 col-md-2 col-sm-2 col-2 p-0">
-										<button type="submit" class="btn fnews-btn"><i
-												class="icofont icofont-location-arrow"></i></button>
-									</div>
-								</div>
-							</form>
-						</div>
-					</div>
-					<!-- End Widget -->
-				</div>
-			</div>
-		</div>
-		<div class="copyright">
-			<div class="auto-container">
-				<div class="row">
-					<div class="col-lg-6 col-md-6 col-sm-12 col-12 copyright-text">
-						<p>Copyright © 2018 <a href="#"> Cleveland.</a> | All Rights Reserved</p>
-					</div>
-					<div class="col-lg-6 col-md-6 col-sm-12 col-12 footer-menu">
-						<ul>
-							<li><a href="#">Make an Enquiry</a> </li>
-							<li><a href="#">Book an Appointment</a> </li>
-							<li><a href="#">Terms and Conditions</a> </li>
-						</ul>
-					</div>
-				</div>
-			</div>
-		</div>
-	</footer>
+	
 	<!-- END FOOTER -->
 
+	<footer class="footer widget-footer clearfix">
+    <div class="second-footer ttm-textcolor-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 widget-area">
+                    <div class="widget widget_nav_menu menu-footer-services-menu2 clearfix">
+                        <h3 class="widget-title">Get Us</h3>
+
+                        <div class="textwidget widget-text">
+                            <i class="fa fa-map-marker" aria-hidden="true"></i> House- 01, Road-04, Dhanmondi, Dhaka
+                            1205, Bangladesh.<br><br>
+                            <i class="fa fa-phone-square" aria-hidden="true"></i> +88 02 58610793-8, +88 0241060908-18<br><br>
+                            <i class="fa fa-envelope" aria-hidden="true"></i> info@labaidgroup.com<br><br>
+                            <div class="social-icons social-hover">
+                                <ul class="list-inline">
+                                    <li class="social-facebook">
+                                        <a class="tooltip-top" target="_blank" href="https://www.facebook.com/LABAID" data-tooltip="Facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                                    </li>
+                                    <li class="social-twitter"><a class="tooltip-top" target="_blank" href="https://twitter.com/labaidgroup" data-tooltip="Twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                                    </li>
+                                    <li class="social-gplus"><a class=" tooltip-top" target="_blank" href="https://youtube.com/@labaidofficial?si=-HvwhsZwErzYKjb9" data-tooltip="Youtube"><i class="fa fa-youtube" aria-hidden="true"></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 widget-area new_update">
+                    <div class="widget widget_nav_menu ">
+                        <h3 class="widget-title">Useful links</h3>
+                       <ul id="menu-footer-quick-links2">
+                            <li><a href="http://103.228.38.10:10031/" target="_balk">Online Reports</a></li>
+                            <li><a href="http://103.228.38.10:10031/" target="_balk">Book Appointment</a></li>
+                            <li><a href="https://labaid.com.bd/en/hospitals">Hospitals</a></li>
+                            <li><a href="https://labaiddiagnostics.com/" target="_balk">Diagnostics Centers</a></li>
+                            <li><a href="https://labaid.com.bd/en/doctors">Doctors</a></li> 
+                        </ul>
+                     
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 widget-area">
+                    <div class="widget widget_nav_menu clearfix">
+                        <h3 class="widget-title">Find Us</h3>
+                       
+                        <a href="https://labaid.com.bd/en/contactUs"><img class="footer-map" src="https://labaid.com.bd/UI/PublicUI/images/footermap.jpg" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="bottom-footer-text ttm-textcolor-white">
+        <div class="container">
+            <div class="row copyright">
+                <div class="col-md-12">
+                    <p class="padding-top-10">Copyright © 2025 Labaid and Developed By <a href="http://www.aamrainfotainment.com/">
+                            <img src="https://labaid.com.bd/UI/PublicUI/images/logo-b.png" style="    width: 200px;"></a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<a id="totop" href="#top" style="display: block;" class="top-visible">
+            <i class="fa fa-angle-up"></i>
+        </a>
 
 	<!-- Latest jQuery -->
 	<script src="assets/js/jquery-2.2.4.min.js"></script>
