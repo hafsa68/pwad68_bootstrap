@@ -161,6 +161,88 @@
         margin: 5px;
       }
     }
+	.site-branding {
+    display: flex
+;
+    align-items: center;
+}
+.site-branding {
+    float: left;
+    height: 99px;
+    line-height: 98px;
+}
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.row {
+    display: -ms-flexbox;
+    display: flex
+;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+@media(min-width: 768px)  { .col-md-3 {
+        -ms-flex: 0 0 25%;
+        flex: 0 0 25%;
+        max-width: 25%;
+    }
+}
+.ttm-header-style-classicinfo .ttm-info-widget {
+    float: left;
+}
+a {
+    color: #333;
+}
+.ttm-header-style-classicinfo .header-widget, .ttm-header-style-infostack .header-widget {
+    display: table-cell;
+    position: relative;
+    vertical-align: middle;
+    height: 100%;
+    padding: 5px 10px 0px 40px;
+}
+.ttm-header-style-classicinfo .header-widget .header-content, .ttm-header-style-classicinfo .header-widget .header-icon, .ttm-header-style-infostack .header-widget .header-content, .ttm-header-style-infostack .header-widget .header-icon {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: left;
+    padding: 0px;
+}
+.ttm-header-style-classicinfo .header-widget .header-icon i, .ttm-header-style-infostack .header-widget .header-icon i {
+    font-size: 23px;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    background-color: rgb(249, 250, 250);
+    text-align: center;
+    float: none;
+}
+.fa-hospital-o:before {
+    content: "\f0f8";
+}
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+.ttm-header-style-classicinfo .header-widget .header-icon i, .ttm-header-style-infostack .header-widget .header-icon i {
+    font-size: 23px;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    background-color: rgb(249, 250, 250);
+    text-align: center;
+    float: none;
+}
+.ttm-header-style-classicinfo .header-widget .header-icon i {
+    background-color: rgb(14, 23, 145);
+    box-shadow: rgba(3, 59, 74, 0.1) 0px 0px 10px 0px;
+}
+.auto-container {
+    max-height: 30px;
+}
   </style>
 
 </head>
@@ -256,7 +338,11 @@
 		<div class="sticky-menu">
 			<div class="mainmenu-area">
 				<div class="auto-container">
+					<div class="site-branding">
+                                    
+                                </div>
 					<div class="row">
+						
 						<div class="col-lg-9 d-lg-block d-md-none d-sm-none d-none ">
 							<nav class="navbar navbar-expand-lg justify-content-left">
 								<a class="navbar-brand" href="#">
@@ -378,6 +464,86 @@
 			</div>
 			<!-- MOBILE-MENU-AREA END -->
 		</div>
+		<header id="masthead" class="header ttm-header-style-classicinfo">
+        <div class="ttm-content-wrapper opacity-8">
+            <div class="container">
+                <div class="row">
+                    <div class="col-6 col-md-3">
+                        <!-- ttm-info-widget-->
+                        <div class="ttm-info-widget">
+                            <a href="https://appointment.labaid.com.bd" target="_blank">
+                                <div class="header-widget">
+                                    <div class="header-icon">
+                                        <i class="fa fa-hospital-o"></i>
+                                    </div>
+                                    <div class="header-content">
+                                        <h3>Book Appointment</h3>
+                                        <!--<p>Call to 10606</p>-->
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <!-- ttm-info-widget-->
+                        <div class="ttm-info-widget">
+
+                            <a href="https://labaid.com.bd/en/doctors" target="_blank">
+                                <div class="header-widget">
+                                    <div class="header-icon">
+                                        <i class="fa fa-user-md"></i>
+                                    </div>
+                                    <div class="header-content">
+                                        <h3>Find A Doctor</h3>
+                                        <!--<p>Qualified Staff</p>-->
+                                    </div>
+                                </div>
+                            </a>
+
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <!-- ttm-info-widget-->
+                        <div class="ttm-info-widget">
+                            <a href="https://care.labaid.com.bd" target="_blank">
+                                <div class="header-widget">
+                                    <div class="header-icon">
+                                        <i class="fa fa-plus-square"></i>
+                                    </div>
+                                    <div class="header-content">
+                                        <h3>Online Report</h3>
+                                        <!--<p>Online Reports</p>-->
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <!-- ttm-info-widget-->
+                        <div class="ttm-info-widget">
+
+                            <a href="https://labaid.com.bd/en/packages">
+                                <div class="header-widget">
+                                    <div class="header-icon">
+                                        <i class="fa fa-list-alt"></i>
+                                    </div>
+                                    <div class="header-content">
+                                        <h3>Packages and Vaccines</h3>
+                                        <!--<p>Best For You</p>-->
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    
+                     
+                    
+                    
+                    
+                </div>
+            </div>
+        </div>
+    </header>
 
 		<div class="service-bar">
     <div class="service-item">
@@ -401,9 +567,59 @@
     </div>
   </div>
 
+<div class="container">
+                    <div class="row">
+                        <div class="col-md-2">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="wrap-search center-section search__container">
+                                <div class="wrap-search-form">
+                                    <form action="https://labaid.com.bd/en/search" method="POST" id="form-search-top" name="form-search-top" class="ng-pristine ng-valid">
+                                        <input type="hidden" name="_token" value="KukLeBXxk31zmvbAm7BypF9LAcLwlJpSwMXe63Cv" autocomplete="off">
+                                        <input type="text" name="search" placeholder="Search For Doctor/Department/Any Thing...">
 
+                                        <button form="form-search-top" type="submit">
+                                            <i class="fa fa-search" aria-hidden="true"></i>
+                                        </button>
+                                        <div class="wrap-list-cate">
+
+                                            <select name="type" class="form-control" required="">
+                                                <option value="0">-- Select Option --</option>
+                                                <option value="doctor"> Doctor</option>
+                                                <option value="department"> Department</option>
+                                                <option value="hospital"> Hospitals</option>
+                                                <option value="diagnostic"> Diagnostics</option>
+                                                <option value="package"> Packages</option>
+                                                <option value="news"> News</option>
+                                            </select>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                        </div>
+                    </div>
+                </div>
 		<!-- END APPOINTMENT SECTION -->
-
+<div class="col-6 py-3 box-shadow ttm-bgcolor-white opacity-8">
+                                    <a href="https://labaid.com.bd/en/hospitals">
+                                        <!-- featured-icon-box -->
+                                        <div class="featured-icon-box top-icon featured-icon-hover text-center">
+                                            <div class="ttm-icon ttm-icon_element-color-skincolor ttm-icon_element-size-lg">
+                                                <i class="flaticon-hospital"></i>
+                                                <!--<img class="img-fluid" src="https://dev.ailservers.com/labaid/files/images/hospital.gif" alt="Responsive image">-->
+                                                
+                                            </div>
+                                            <div class="featured-content">
+                                                <div class="featured-title short-height">
+                                                    <h5>Hospital</h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- featured-icon-box end-->
+                                    </a>
+                                </div>
 
 		<!-- START NAVIGATION AREA -->
 
