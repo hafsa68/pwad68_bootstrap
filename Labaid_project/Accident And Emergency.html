@@ -878,6 +878,52 @@ html {
 .footer .ttm-textcolor-white {
 	padding-top: 20px;
 }
+
+body .site-main {
+    background-color: #fff;
+    position: relative;
+    z-index: 9;
+}
+.sidebar .sidebar-right, .sidebar .sidebar-left {
+    margin-top: -37px;
+    padding-top: 60px;
+    padding-bottom: 70px;
+    float: right;
+}
+.ttm-bgcolor-grey, .sidebar .ttm-bgcolor-grey > .ttm-bg-layer {
+    background-color: #fff;
+}
+.sidebar .widget-area .widget {
+    position: relative;
+    margin: 40px 0 40px;
+    max-height: 600px;
+    overflow-y: scroll;
+}
+.widget ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.sidebar .widget ul>li:first-child {
+    border-top: none;
+    padding-top: 0;
+}
+.header-icon .ttm-bgcolor-skincolor, .ttm-bgcolor-skincolor > .ttm-bg-layer, .ttm-btn-style-fill.ttm-btn-color-skincolor, .ttm-icon_element-background-color-skincolor, .ttm-btn-color-black:hover, .ttm-btn.ttm-btn-style-fill.ttm-btn-color-black:hover, .tp-caption.video-icon-btn, .ttm-video-btn .ttm-btn-play, .ttm-btn-play:after, .ttm-btn-play:before, .ttm-fbar-position-right .ttm-fbar-btn a, .ttm-fbar-box-w .submit_field button, .ttm-btn.ttm-btn-style-border.ttm-btn-color-skincolor:hover, .ttm-icon_element-background-skincolor, .ttm-header-style-classicinfo .ttm-contact, .ttm-header-style-classicinfo .ttm-contact:after, #site-header-menu #site-navigation .menu > ul ul li.active > a, #site-header-menu #site-navigation .menu > ul ul li:hover > a, .ttm-header-floating-text, #site-header-menu #site-navigation .sep-img, .featured-imagebox-team.ttm-team-box-view-overlay:hover .featured-content, .ttm-post-format-icon, .ttm-box-post-date, .featured-imagebox-team .ttm-media-link a, .ttm_subscribe_form .btn[type="submit"], .footer .social-icons li > a:hover, .wrap-form input[type="submit"], .featured-icon-box.style5:hover:before, .featured-icon-box.style4:hover, .featured-icon-box.style4:hover .featured-icon-box-inner, .ttm-portfolio-box-view-overlay .featured-iconbox.ttm-media-link a, .ttm-progress-bar .progress .progress-bar.progress-bar-color-bar_skincolor, .accordion .ttm-style-classic.active .toggle-title, .featured-imagebox-event.ttm-box-view-top-image .ttm-meta-date, .accordion .ttm-style-classic .toggle-title, .calendar header, .calendar.small .calendar-frame tbody td:hover, .bbpress-forums ul li.bbp-header, .ttm-bgcolor-darkgrey .ttm-testimonial-box-view-style3 .testimonial-content:before, .ttm-tabs ul.tabs li.active a, .ttm-tabs.ttm-tab-style-vertical ul.tabs li.active a, .ttm-tabs.ttm-tab-style-horizontal ul.tabs li.active a, .ttm-tabs.tabs-for-single-products ul.tabs li:hover a, .social-icons.circle li > a:hover, .ttm-nextprev-bottom-nav .nav-next a, .ttm-nextprev-bottom-nav .nav-previous a, .widget .ttm_info_widget, .widget.widget-nav-menu ul li.active a, .widget.widget-nav-menu ul li a:hover, .sidebar .widget .tagcloud a:hover, .ttm-pagination .page-numbers.current, .ttm-pagination .page-numbers:hover, .comment-list a.comment-reply-link, .ttm-pricing-plan:not(.ttm-ptablebox-featured-col) .ttm-ptable-main, .ttm-pricing-plan .ttm-ptable-icon, .products .product .onsale, .ttm-sidebar-right .product-list-widget .price ins, .products .product .ttm-shop-icon a:hover, div.product button.cart_button:hover, .form-submit input:hover, a.checkout-button:hover, .coupon button:hover, .ttm-cart-form button:hover, .place-order button:hover, #totop.top-visible, .label-new {
+    background-color: #0b7d72;
+}
+.widget.widget-nav-menu ul li a {
+    display: block;
+    padding: 16px 30px 16px 15px;
+    position: relative;
+    font-weight: 500;
+    font-size: 15px;}
+
+  @media  only screen and (max-width: 1366px) and (min-width: 1200px){
+    .mobile-only {
+        display: none;
+    }
+}
+  
 	</style>
 </head>
 
@@ -1119,7 +1165,7 @@ html {
                 <div class="col-md-12">
                     <div class="title-box ttm-textcolor-white">
                         <div class="page-title-heading">
-                            <h1 class="title">About Labaid</h1>
+                            <h1 class="title">Accident And Emergency</h1>
                         </div><!-- /.page-title-captions -->
                         <div class="breadcrumb-wrapper">
                             <div class="container">
@@ -1129,7 +1175,7 @@ html {
                                                 <i class="themifyicon ti-home"></i>&nbsp;&nbsp;Home</a>
                                         </span>
                                     <span class="ttm-bread-sep">&nbsp; | &nbsp;</span>
-                                    <span>About Labaid</span>
+                                    <span>Department</span>
                                 </div>
                             </div>
                         </div>
@@ -1139,54 +1185,294 @@ html {
         </div><!-- /.container -->
     </div>
 	<!-- END LOGO AREA -->
-	<div class="site-main">
+	<div class="site-main single">
 
-        <section class="ttm-row experiance-section bg-layer break-1199-colum clearfix pt-50">
+        <!-- sidebar -->
+        <div class="sidebar ttm-sidebar-left ttm-bgcolor-white break-991-colum clearfix">
             <div class="container">
+                <!-- row -->
                 <div class="row">
-                                        <div class="col-lg-6 col-sm-12  ">
-                        <!-- ttm_single_image-wrapper -->
-                        <div class="ttm_single_image-wrapper text-right p-3">
-                            
-                            <img class="img-fluid fr-fic fr-dii" src="https://labaid.com.bd/files/images/1614232110.jpg" alt="About Labaid">
-                                 
+                    <div class="col-lg-3 widget-area sidebar-left ttm-col-bgcolor-yes ttm-bg ttm-left-span ttm-bgcolor-grey">
+                        <div class="ttm-col-wrapper-bg-layer ttm-bg-layer"></div>
+                        <aside class="widget widget-nav-menu desktop-only">
+                            <ul class="widget-menu box-shadow">
+                                                                    <li class="active"><a href="https://labaid.com.bd/en/department/accident-and-emergency">Accident And Emergency</a>
+                                    </li>
+                                                                    <li><a href="https://labaid.com.bd/en/department/anaesthesiology1">Anaesthesiology</a>
+                                    </li>
+                                                                    <li><a href="https://labaid.com.bd/en/department/burn-and-plastic">Burn &amp; Plastic Surgery</a>
+                                    </li>
+                                                                    <li><a href="https://labaid.com.bd/en/department/cardiac-surgery-department">Cardiac Surgery</a>
+                                    </li>
+                                                                    <li><a href="https://labaid.com.bd/en/department/cardiothoracic-and-vascular-surgery">Cardiothoracic And Vascular Surgery</a>
+                                    </li>
+                                                                    <li><a href="https://labaid.com.bd/en/department/cath-lab-department">Cath Lab</a>
+                                    </li>
+                                                                    <li><a href="https://labaid.com.bd/en/department/chemotherapy">Chemotherapy</a>
+                                    </li>
+                                                                    <li><a href="https://labaid.com.bd/en/department/colorectal-surgery">Colorectal Surgery</a>
+                                    </li>
+                                                                    <li><a href="https://labaid.com.bd/en/department/ccu-department">Coronary Care Unit - CCU</a>
+                                    </li>
+                                                                    <li><a href="https://labaid.com.bd/en/department/dermatology">Dermatology</a>
+                                    </li>
+                                                                    <li><a href="https://labaid.com.bd/en/department/dialysis">Dialysis</a>
+                                    </li>
+                                                                    <li><a href="https://labaid.com.bd/en/department/dietetics-and-nutrition">Dietetics And Nutrition</a>
+                                    </li>
+                                                                    <li><a href="https://labaid.com.bd/en/department/endocrinology">Endocrinology</a>
+                                    </li>
+                                                                    <li><a href="https://labaid.com.bd/en/department/ent">ENT</a>
+                                    </li>
+                                                                    <li><a href="https://labaid.com.bd/en/department/fertility-center-(ivf)">Fertility Center (IVF)</a>
+                                    </li>
+                                                                    <li><a href="https://labaid.com.bd/en/department/gastroenterology">Gastroenterology</a>
+                                    </li>
+                                                                    <li><a href="https://labaid.com.bd/en/department/general-and-laparoscopic-surgery">General And Laparoscopic Surgery</a>
+                                    </li>
+                                                                    <li><a href="https://labaid.com.bd/en/department/gynaecology-&amp;-obstetircs-&amp;-laparoscopic-surgery">Gynaecology &amp; Obstetircs &amp; Laparoscopic Surgery</a>
+                                    </li>
+                                                                    <li><a href="https://labaid.com.bd/en/department/health-check-up-services">Health Check-up Services</a>
+                                    </li>
+                                                                    <li><a href="https://labaid.com.bd/en/department/hematology">Hematology</a>
+                                    </li>
+                                                                    <li><a href="https://labaid.com.bd/en/department/liver-pancreatic-and-hepatobiliary-surgery">Hepatobiliary Surgery</a>
+                                    </li>
+                                                                    <li><a href="https://labaid.com.bd/en/department/hepatology">Hepatology</a>
+                                    </li>
+                                                                    <li><a href="https://labaid.com.bd/en/department/icu">ICU</a>
+                                    </li>
+                                                                    <li><a href="https://labaid.com.bd/en/department/internal-medicine">Internal Medicine</a>
+                                    </li>
+                                                                    <li><a href="https://labaid.com.bd/en/department/interventional-cardiology">Interventional Cardiology</a>
+                                    </li>
+                                                                    <li><a href="https://labaid.com.bd/en/department/interventional-cardiology-&amp;-electro-physiology">Interventional Cardiology &amp; Electro Physiology</a>
+                                    </li>
+                                                                    <li><a href="https://labaid.com.bd/en/department/laparoscopy">Laparoscopy</a>
+                                    </li>
+                                                                    <li><a href="https://labaid.com.bd/en/department/medicine">Medicine</a>
+                                    </li>
+                                                                    <li><a href="https://labaid.com.bd/en/department/medicine-&amp;-diabetology">Medicine &amp; Diabetology</a>
+                                    </li>
+                                                                    <li><a href="https://labaid.com.bd/en/department/medicine-&amp;-rheumatology">Medicine &amp; Rheumatology</a>
+                                    </li>
+                                                                    <li><a href="https://labaid.com.bd/en/department/nephrology">Nephrology</a>
+                                    </li>
+                                                                    <li><a href="https://labaid.com.bd/en/department/neuro-&amp;-spinal-surgery">Neuro &amp; Spinal Surgery</a>
+                                    </li>
+                                                                    <li><a href="https://labaid.com.bd/en/department/neuro-medicine">Neuro Medicine</a>
+                                    </li>
+                                                                    <li><a href="https://labaid.com.bd/en/department/neurology">Neurology</a>
+                                    </li>
+                                                                    <li><a href="https://labaid.com.bd/en/department/nicu">NICU</a>
+                                    </li>
+                                                                    <li><a href="https://labaid.com.bd/en/department/nuclear-medicine-department">Nuclear Medicine</a>
+                                    </li>
+                                                                    <li><a href="https://labaid.com.bd/en/department/oncology">Oncology</a>
+                                    </li>
+                                                                    <li><a href="https://labaid.com.bd/en/department/ophthalmology">Ophthalmology</a>
+                                    </li>
+                                                                    <li><a href="https://labaid.com.bd/en/department/orthopaedic-&amp;-trauma-surgery">Orthopaedic &amp; Trauma Surgery</a>
+                                    </li>
+                                                                    <li><a href="https://labaid.com.bd/en/department/pain-management">Pain Management</a>
+                                    </li>
+                                                                    <li><a href="https://labaid.com.bd/en/department/pediatric">Pediatric</a>
+                                    </li>
+                                                                    <li><a href="https://labaid.com.bd/en/department/pediatriccardiologist">Pediatric Cardiologist</a>
+                                    </li>
+                                                                    <li><a href="https://labaid.com.bd/en/department/pediatric-interventional-cardiology">Pediatric Interventional Cardiology</a>
+                                    </li>
+                                                                    <li><a href="https://labaid.com.bd/en/department/pediatric-nephrology">Pediatric Nephrology</a>
+                                    </li>
+                                                                    <li><a href="https://labaid.com.bd/en/department/pediatric-neurology">Pediatric Neurology</a>
+                                    </li>
+                                                                    <li><a href="https://labaid.com.bd/en/department/pediatric-surgery">Pediatric Surgery</a>
+                                    </li>
+                                                                    <li><a href="https://labaid.com.bd/en/department/physical-medicine">Physical Medicine</a>
+                                    </li>
+                                                                    <li><a href="https://labaid.com.bd/en/department/psychiatry">Psychiatry</a>
+                                    </li>
+                                                                    <li><a href="https://labaid.com.bd/en/department/psychology-&amp;-therapeutic-counselling">Psychology &amp; Therapeutic Counselling</a>
+                                    </li>
+                                                                    <li><a href="https://labaid.com.bd/en/department/pulmonology-and-chest-diseases">Pulmonology And Chest Diseases</a>
+                                    </li>
+                                                                    <li><a href="https://labaid.com.bd/en/department/radiology-and-imaging">Radiology And Imaging</a>
+                                    </li>
+                                                                    <li><a href="https://labaid.com.bd/en/department/stroke-and-interventional-neurology">Stroke And Interventional Neurology</a>
+                                    </li>
+                                                                    <li><a href="https://labaid.com.bd/en/department/thoracic-surgery">Thoracic Surgery</a>
+                                    </li>
+                                                                    <li><a href="https://labaid.com.bd/en/department/thyroid-specialist-&amp;-nuclear-medicine">Thyroid Specialist &amp; Nuclear Medicine</a>
+                                    </li>
+                                                                    <li><a href="https://labaid.com.bd/en/department/urology,-andrology-&amp;-uro-oncology">Urology, Andrology &amp; Uro-Oncology</a>
+                                    </li>
+                                                                    <li><a href="https://labaid.com.bd/en/department/vaccination-center-2">Vaccination Center</a>
+                                    </li>
+                                                                    <li><a href="https://labaid.com.bd/en/department/vascular-surgery">Vascular Surgery</a>
+                                    </li>
+                                                            </ul>
+                        </aside>
+                        <div id="accordion" class="mobile-only">
+                            <div class="card" style="border: none">
+                                <button class="btn btn-block" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                   Select Department
+                                </button>
+                                <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                                    <div class="card-body" style="border: 1px solid rgba(0, 0, 0, .125);">
+                                        <aside class="widget widget-nav-menu mobile-only" style="margin: 0px">
+                                            <ul class="widget-menu box-shadow">
+                                                                                                    <li class="active"><a href="https://labaid.com.bd/en/department/accident-and-emergency">Accident And Emergency</a>
+                                                    </li>
+                                                                                                    <li><a href="https://labaid.com.bd/en/department/anaesthesiology1">Anaesthesiology</a>
+                                                    </li>
+                                                                                                    <li><a href="https://labaid.com.bd/en/department/burn-and-plastic">Burn &amp; Plastic Surgery</a>
+                                                    </li>
+                                                                                                    <li><a href="https://labaid.com.bd/en/department/cardiac-surgery-department">Cardiac Surgery</a>
+                                                    </li>
+                                                                                                    <li><a href="https://labaid.com.bd/en/department/cardiothoracic-and-vascular-surgery">Cardiothoracic And Vascular Surgery</a>
+                                                    </li>
+                                                                                                    <li><a href="https://labaid.com.bd/en/department/cath-lab-department">Cath Lab</a>
+                                                    </li>
+                                                                                                    <li><a href="https://labaid.com.bd/en/department/chemotherapy">Chemotherapy</a>
+                                                    </li>
+                                                                                                    <li><a href="https://labaid.com.bd/en/department/colorectal-surgery">Colorectal Surgery</a>
+                                                    </li>
+                                                                                                    <li><a href="https://labaid.com.bd/en/department/ccu-department">Coronary Care Unit - CCU</a>
+                                                    </li>
+                                                                                                    <li><a href="https://labaid.com.bd/en/department/dermatology">Dermatology</a>
+                                                    </li>
+                                                                                                    <li><a href="https://labaid.com.bd/en/department/dialysis">Dialysis</a>
+                                                    </li>
+                                                                                                    <li><a href="https://labaid.com.bd/en/department/dietetics-and-nutrition">Dietetics And Nutrition</a>
+                                                    </li>
+                                                                                                    <li><a href="https://labaid.com.bd/en/department/endocrinology">Endocrinology</a>
+                                                    </li>
+                                                                                                    <li><a href="https://labaid.com.bd/en/department/ent">ENT</a>
+                                                    </li>
+                                                                                                    <li><a href="https://labaid.com.bd/en/department/fertility-center-(ivf)">Fertility Center (IVF)</a>
+                                                    </li>
+                                                                                                    <li><a href="https://labaid.com.bd/en/department/gastroenterology">Gastroenterology</a>
+                                                    </li>
+                                                                                                    <li><a href="https://labaid.com.bd/en/department/general-and-laparoscopic-surgery">General And Laparoscopic Surgery</a>
+                                                    </li>
+                                                                                                    <li><a href="https://labaid.com.bd/en/department/gynaecology-&amp;-obstetircs-&amp;-laparoscopic-surgery">Gynaecology &amp; Obstetircs &amp; Laparoscopic Surgery</a>
+                                                    </li>
+                                                                                                    <li><a href="https://labaid.com.bd/en/department/health-check-up-services">Health Check-up Services</a>
+                                                    </li>
+                                                                                                    <li><a href="https://labaid.com.bd/en/department/hematology">Hematology</a>
+                                                    </li>
+                                                                                                    <li><a href="https://labaid.com.bd/en/department/liver-pancreatic-and-hepatobiliary-surgery">Hepatobiliary Surgery</a>
+                                                    </li>
+                                                                                                    <li><a href="https://labaid.com.bd/en/department/hepatology">Hepatology</a>
+                                                    </li>
+                                                                                                    <li><a href="https://labaid.com.bd/en/department/icu">ICU</a>
+                                                    </li>
+                                                                                                    <li><a href="https://labaid.com.bd/en/department/internal-medicine">Internal Medicine</a>
+                                                    </li>
+                                                                                                    <li><a href="https://labaid.com.bd/en/department/interventional-cardiology">Interventional Cardiology</a>
+                                                    </li>
+                                                                                                    <li><a href="https://labaid.com.bd/en/department/interventional-cardiology-&amp;-electro-physiology">Interventional Cardiology &amp; Electro Physiology</a>
+                                                    </li>
+                                                                                                    <li><a href="https://labaid.com.bd/en/department/laparoscopy">Laparoscopy</a>
+                                                    </li>
+                                                                                                    <li><a href="https://labaid.com.bd/en/department/medicine">Medicine</a>
+                                                    </li>
+                                                                                                    <li><a href="https://labaid.com.bd/en/department/medicine-&amp;-diabetology">Medicine &amp; Diabetology</a>
+                                                    </li>
+                                                                                                    <li><a href="https://labaid.com.bd/en/department/medicine-&amp;-rheumatology">Medicine &amp; Rheumatology</a>
+                                                    </li>
+                                                                                                    <li><a href="https://labaid.com.bd/en/department/nephrology">Nephrology</a>
+                                                    </li>
+                                                                                                    <li><a href="https://labaid.com.bd/en/department/neuro-&amp;-spinal-surgery">Neuro &amp; Spinal Surgery</a>
+                                                    </li>
+                                                                                                    <li><a href="https://labaid.com.bd/en/department/neuro-medicine">Neuro Medicine</a>
+                                                    </li>
+                                                                                                    <li><a href="https://labaid.com.bd/en/department/neurology">Neurology</a>
+                                                    </li>
+                                                                                                    <li><a href="https://labaid.com.bd/en/department/nicu">NICU</a>
+                                                    </li>
+                                                                                                    <li><a href="https://labaid.com.bd/en/department/nuclear-medicine-department">Nuclear Medicine</a>
+                                                    </li>
+                                                                                                    <li><a href="https://labaid.com.bd/en/department/oncology">Oncology</a>
+                                                    </li>
+                                                                                                    <li><a href="https://labaid.com.bd/en/department/ophthalmology">Ophthalmology</a>
+                                                    </li>
+                                                                                                    <li><a href="https://labaid.com.bd/en/department/orthopaedic-&amp;-trauma-surgery">Orthopaedic &amp; Trauma Surgery</a>
+                                                    </li>
+                                                                                                    <li><a href="https://labaid.com.bd/en/department/pain-management">Pain Management</a>
+                                                    </li>
+                                                                                                    <li><a href="https://labaid.com.bd/en/department/pediatric">Pediatric</a>
+                                                    </li>
+                                                                                                    <li><a href="https://labaid.com.bd/en/department/pediatriccardiologist">Pediatric Cardiologist</a>
+                                                    </li>
+                                                                                                    <li><a href="https://labaid.com.bd/en/department/pediatric-interventional-cardiology">Pediatric Interventional Cardiology</a>
+                                                    </li>
+                                                                                                    <li><a href="https://labaid.com.bd/en/department/pediatric-nephrology">Pediatric Nephrology</a>
+                                                    </li>
+                                                                                                    <li><a href="https://labaid.com.bd/en/department/pediatric-neurology">Pediatric Neurology</a>
+                                                    </li>
+                                                                                                    <li><a href="https://labaid.com.bd/en/department/pediatric-surgery">Pediatric Surgery</a>
+                                                    </li>
+                                                                                                    <li><a href="https://labaid.com.bd/en/department/physical-medicine">Physical Medicine</a>
+                                                    </li>
+                                                                                                    <li><a href="https://labaid.com.bd/en/department/psychiatry">Psychiatry</a>
+                                                    </li>
+                                                                                                    <li><a href="https://labaid.com.bd/en/department/psychology-&amp;-therapeutic-counselling">Psychology &amp; Therapeutic Counselling</a>
+                                                    </li>
+                                                                                                    <li><a href="https://labaid.com.bd/en/department/pulmonology-and-chest-diseases">Pulmonology And Chest Diseases</a>
+                                                    </li>
+                                                                                                    <li><a href="https://labaid.com.bd/en/department/radiology-and-imaging">Radiology And Imaging</a>
+                                                    </li>
+                                                                                                    <li><a href="https://labaid.com.bd/en/department/stroke-and-interventional-neurology">Stroke And Interventional Neurology</a>
+                                                    </li>
+                                                                                                    <li><a href="https://labaid.com.bd/en/department/thoracic-surgery">Thoracic Surgery</a>
+                                                    </li>
+                                                                                                    <li><a href="https://labaid.com.bd/en/department/thyroid-specialist-&amp;-nuclear-medicine">Thyroid Specialist &amp; Nuclear Medicine</a>
+                                                    </li>
+                                                                                                    <li><a href="https://labaid.com.bd/en/department/urology,-andrology-&amp;-uro-oncology">Urology, Andrology &amp; Uro-Oncology</a>
+                                                    </li>
+                                                                                                    <li><a href="https://labaid.com.bd/en/department/vaccination-center-2">Vaccination Center</a>
+                                                    </li>
+                                                                                                    <li><a href="https://labaid.com.bd/en/department/vascular-surgery">Vascular Surgery</a>
+                                                    </li>
+                                                                                            </ul>
+                                        </aside>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <!-- ttm_single_image-wrapper end -->
                     </div>
-                    <div class="col-lg-6 col-sm-12 ">
-                        <div class="p-3 res-991-pl-0 text-justify">
-                            <!-- section title -->
-                            <div class="section-title clearfix"><div class="title-header"><h2 class="title">For Bangladesh<br>By Bangladesh</h2></div></div><!-- section title end --><div class="mb-25 clearfix"><p>Labaid is one of the largest and most recognized private healthcare brands in Bangladesh. Known for its pioneering works in setting-up the first super-specialty Cardiac hospital in the country, Labaid is also widely acknowledged for bringing high quality diagnostic and specialized consultation facilities under a single roof through its now ubiquitous centers in all corners of Bangladesh, around 3 million annual patient encounters, nearly 8,000 employees, and around 1000 top- notch consultant physicians countrywide.</p></div>
+                    <div class="col-lg-9 content-area">
+                        <!-- ttm-service-single-content-are -->
+                        <div class="ttm-service-single-content-area">
+                            <div class="row">
+                                <div class="col-sm-12">
+                                
+
+                                    <div class="row pt-15 mb_10 doctor-profile">
+                                        <div class="col-sm-12">
+                                            
+                                            <div class="row pt-15 mb_10">
+                                                <div class="col-lg-12">
+                                                    
+                                                                        
+                                                                         
+                                                </div>
+                                            </div>
+                                            <div class="row ttm-boxes-row-wrapper">
+                                                                                            </div>
+                                        </div>
+                                    </div>
+                                    <p>The department of emergency medicine at Labaid Hospital , which work as the quick response team , is staffed &nbsp;hours a day by in- house trauma nurses and vital support services including the blood bank and laboratory services . The emergency department staffs at Labaid always strive to provide patients with the highest quality emergency care and service in an efficient and timely manner.</p><p><br></p><p><br></p><p><br></p>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    
-                    
-                    <!-----------------------------------------board-of-directors Start --------------------------->
-                                        <!-----------------------------------------board-of-directors End --------------------------->
-                    
-                    <!-----------------------------------------management-team Start --------------------------->
-                                        <!-----------------------------------------management-team End --------------------------->
-                    
-                    
-                    <div class="col-lg-12 col-sm-12">
-                        <p>Led by the visionary physician-entrepreneur Dr. A M Shamim, Labaid over the last 35 years - almost single handedly transformed the face of private, corporate healthcare in Bangladesh by providing quality platform for home-grown physicians and medical practitioners, setting up centers of excellence, and in this process, gradually changing the collective mindset where people now believe that complex treatments like transplantation or cardio-vascular surgeries can happen with excellent outcome in Bangladesh by Bangladeshi doctors. &nbsp;</p><p>In its relentless drive to bring value to the people of this country, Labaid has further diversified into other sectors over the years: Labaid set up pharmaceutical plant to ensure supply of quality medicine for the masses; established tertiary-level education institutes to plug the gap in skilled&nbsp;</p><p>human resources both for healthcare and other industries; built modern homes and infrastructure through Labaid Properties to give shape to people’s dreams; and created Labaid Agros to provide organic and quality foods for patients and customers alike.&nbsp;</p><p>Labaid is a name that inspires trust, an institution that people can turn to in fulfilling their everyday needs and aspirations. And Labaid on its part is extremely proud to live this dream and to achieve what it has achieved as it aspires ceaselessly to be a <strong>Home of Trust.&nbsp;</strong></p>
-                    </div>
-                </div>
-                <div class="row mt-50">
-                    <div class="col-lg-12 col-sm-12">
-                        <div class="section-title with-desc clearfix"><div class="title-header"><h2 class="title text-center">Our History</h2></div><div class="title-desc text-justify"><p><strong>HISTORY OF LABAID GROUP – THE JOURNEY OF PIONEERS&nbsp;</strong></p><p>It all started in year 1989. “When we started out in 1989, we noticed that patients in Dhaka had to wait as much as a week to get their results,” says Dr A. M. Shamim, Founder and Managing Director of Labaid. “So, we decided to simplify matters by creating a one-stop center where patients could access doctors, diagnostics and pharmacies, all in one place. It has proved to be a successful model and you can find it in practice in Pakistan and India as well”, continues Dr. Shamim. And, of course in Bangladesh itself, where there are now 30 Labaid Diagnostic Centers in operation and 10 more in the pipeline.&nbsp;</p><p>Dr Shamim and his colleagues have spent the three decades since then continuously looking for commercially sustainable ways of improving the country’s healthcare system. “We are always looking for areas of public demand where solutions are lacking,” Dr Shamim says. “We are pioneers and that is one of our great strengths.” It is a strength that stems from a deep understanding of the issues inherent within the Bangladeshi healthcare system and also from a genuine desire to fix them. These underlying characteristics have, firstly, prompted Labaid to diversify the range of services it offers to Bangladeshi patients. In 2004 it opened Labaid Cardiac Hospital to save so many Bangladeshis having to go abroad for cardiological treatment. This was followed by the Labaid Specialized Hospital (2006), the first multi-disciplinary super-specialty tertiary care corporate hospital in Bangladesh, and then by the Labaid Cancer Hospital. The Labaid Specialized Hospital in particular is a shining example of a successful synergy of state-of-the-art medical technology and equipment on the one hand, and the efficiencies that can be achieved through the appropriate implementation of an IT-based paperless medical record administrative system on the other. &nbsp;</p><p>Cutting-edge technology and software need highly skilled staff to operate them and Labaid has funded three educational establishments: the State University of Bangladesh (2002), the Bangladesh Institute of Medical and Dental Technology (1996) - the first private institute of its kind in Bangladesh, and the State College of Health Science (2006). These institutes produce health professionals, nurses, paramedics, physiotherapists and dental technicians to meet its own demand and that of country’s other medical facilities. &nbsp;</p><p>&nbsp;&nbsp;</p><p>Right around the world, the pharmacy retail market has long been plagued by a proliferation of spurious medicines and Bangladesh has been no exception. To combat this, Labaid has both built its own pharmaceutical manufacturing plant and taken it upon itself to police the entire supply chain. “We wanted to be able to provide our patients with the best possible medicine, so we&nbsp;</p><p>invested in the best factory, the best raw materials, the best people under the single slogan of ‘quality first’,” Dr. Shamim explains, “and because there was also widespread mistreatment of legitimate pharmaceuticals that were becoming contaminated through poor storage, we invested in setting up (so far 25) retail shops (Labaid Pharmacy) throughout the country to ensure safe medicine for consumers. We expect that our practices of direct supply from producers, cold chain of supply, and maintaining proper expiry dates of medicines will inspire 150 thousand pharmacies to follow suit.” &nbsp;</p><p>The Labaid story will not be complete without Labaid Agros (2004), which provides fresh and organic food and Agri products; and Labaid Properties Ltd (1995) that brings a Labaid brand of reliability in building homes and infrastructure for people. &nbsp;</p><p>Even more ambitious lie ahead particularly, in Dr. Shamim’s vision for myhealth.com, an Amazon-style platform for the country’s entire healthcare sector. “myhealth.com will be operated as a separate company,” he says. “The idea is to create a network of hundreds of hospitals, diagnostics centers and pharmacies that people can use to schedule appointments, order repeat prescription and get other forms of healthcare assistance. This is our growth strategy – to create a platform that all stakeholders can use.”&nbsp;</p></div></div><div class="section-title with-desc clearfix"><div class="title-header"><h2 class="title text-center">Our Vision</h2></div><div class="title-desc text-justify"><p>Excellence through innovation is the central concept of our vision. Together with the concept customer satisfaction with persistent relationship is the DNA of our corporate culture. This vision helps us to find the driving way. In a competitive and fast-changing world, the business dynamics are constantly changing. Today only innovation can bring excellence and add value to products and services that can satisfy our customers.</p></div></div><div class="section-title with-desc clearfix"><div class="title-header"><h2 class="title text-center">Our Values</h2></div><div class="title-desc text-justify"><p>We are committed to serve for human kind. At Labaid, we do things passionately to help people live healthier and happier. We understand that our responsibilities are more towards our communities as they believe Labaid is the place to rely on and trust. We believe it is our sacred responsibility to repay the debt to the soil which gave us birth. Our every activity is driven by this belief. Today Labaid is the name of quality, care and trust. We have always been value- driven company. We consider these values as the heart of company and soul of the business. Our core values are:&nbsp;</p><p><br></p><strong>· Integrity&nbsp;</strong></div><div class="title-desc text-justify"><strong>· Excellence&nbsp;<p>· Respect for Individual</p></strong></div><div class="title-desc text-justify"><br></div><p><br></p><div class="title-desc text-justify"><strong>Integrity</strong>&nbsp;</div><p>We make every effort to ensure highest level of integrity in doing business. We treat honesty, truth and fairness as the building block of our entrepreneurship. &nbsp;</p><p><br></p><p><strong>Excellence</strong>&nbsp;</p><p>We continuously strive to achieve highest possible standard in every activity and in the quality of products and services we provide. We believe attaining excellence is an endless journey and our journey for excellence will never be ended.&nbsp;</p><p><br></p><p><strong>Respect for Individual&nbsp;</strong></p><p>We foster an environment that is built on openness, transparency, mutual respect, individual’s integrity. We treat people how we want to be treated. We care all individuals whom we touch or to be touched: customers, employees, partners, suppliers and communities.</p><br><p><br></p></div>
-                    </div>
-                </div>
-                <!-- row end -->
+                    <!-- ttm-service-single-content-are end -->
+                </div><!-- row end -->
             </div>
-        </section>
-        <!--body-section-->
-
-        <!-- extra_1-section -->
-    
-    <!-- extra_1-section end -->
-
-      
+        </div>
+        <!-- sidebar end -->
 
     </div>
 
