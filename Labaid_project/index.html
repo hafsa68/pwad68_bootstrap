@@ -562,154 +562,157 @@
 		}
 
 		/* Base Element Styling (Minimal for sections) */
-ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
+		ul {
+			list-style: none;
+			padding: 0;
+			margin: 0;
+		}
 
-a {
-    text-decoration: none;
-    color: #0b7d72;
-}
+		a {
+			text-decoration: none;
+			color: #0b7d72;
+		}
 
-/* --- 1. Top Navigation Bar (Header) --- */
-.main-header {
-    background-color: #F8F9FA;
-    
-    border-bottom: 1px solid #eee;
-}
+		/* --- 1. Top Navigation Bar (Header) --- */
+		.main-header {
+			background-color: #F8F9FA;
 
-.top-nav ul {
-    display: flex;
-    justify-content: center; /* Align links to the right */
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-}
+			border-bottom: 1px solid #eee;
+		}
 
-.top-nav li {
-    padding: 0 50px;
-    padding-bottom: 10px;
-    font-size: 16px;
-    color: #033b4a;
-    display: flex;
-    align-items: center;
-}
+		.top-nav ul {
+			display: flex;
+			justify-content: center;
+			/* Align links to the right */
+			max-width: 1200px;
+			margin: 0 auto;
+			padding: 0 20px;
+		}
 
-.top-nav .icon {
-    margin-right: 8px;
-    position: inherit;
-    padding: 5px;
-    font-size: 25px; 
-    background-color: rgb(255, 255, 255);
-    border-radius: 2px;
-    box-shadow: 0 0 10px 0 rgba(3, 59, 74, .1);
-}
+		.top-nav li {
+			padding: 0 50px;
+			padding-bottom: 10px;
+			font-size: 16px;
+			color: #033b4a;
+			display: flex;
+			align-items: center;
+		}
 
-/* --- 2. Main Hero Section (Background & Search) --- */
+		.top-nav .icon {
+			margin-right: 8px;
+			position: inherit;
+			padding: 5px;
+			font-size: 25px;
+			background-color: rgb(255, 255, 255);
+			border-radius: 2px;
+			box-shadow: 0 0 10px 0 rgba(3, 59, 74, .1);
+		}
 
-.footer .ttm-textcolor-white {
-	padding-top: 20px;
-}
-.search-module-wrapper {
-    z-index: 40; /* Ensure search content is on top of everything */
-    width: 90%;
-    max-width: 800px;
-    text-align: center;
-}
+		/* --- 2. Main Hero Section (Background & Search) --- */
 
-.search-form-container {
-    background: rgba(255, 255, 255, 0.95); 
-    border-radius: 5px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-    padding: 10px;
-}
+		.footer .ttm-textcolor-white {
+			padding-top: 20px;
+		}
 
-.search-form {
-    display: flex;
-    gap: 10px;
-    align-items: center;
-}
+		.search-module-wrapper {
+			z-index: 40;
+			/* Ensure search content is on top of everything */
+			width: 90%;
+			max-width: 800px;
+			text-align: center;
+		}
 
-.search-form input, 
-.search-form select {
-    padding: 15px 20px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    font-size: 16px;
-    flex-grow: 1;
-    min-width: 150px;
-}
+		.search-form-container {
+			background: rgba(255, 255, 255, 0.95);
+			border-radius: 5px;
+			box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+			padding: 10px;
+		}
 
-.search-form input {
-    flex-basis: 60%; 
-}
+		.search-form {
+			display: flex;
+			gap: 10px;
+			align-items: center;
+		}
 
-.search-form select {
-    flex-basis: 30%; 
-    color: #666; 
-}
+		.search-form input,
+		.search-form select {
+			padding: 15px 20px;
+			border: 1px solid #ddd;
+			border-radius: 4px;
+			font-size: 16px;
+			flex-grow: 1;
+			min-width: 150px;
+		}
 
-.search-button {
-    background-color: #ff6600; /* Orange color */
-    color: white;
-    border: none;
-    padding: 15px 20px;
-    cursor: pointer;
-    border-radius: 4px;
-    font-size: 18px;
-    transition: background-color 0.3s;
-    /* Using a magnifying glass icon */
-    content: '🔍'; 
-}
+		.search-form input {
+			flex-basis: 60%;
+		}
 
-.search-button:hover {
-    background-color: #ff6a06;
-}
-.service-categories {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    margin-top: 20px;
-}
+		.search-form select {
+			flex-basis: 30%;
+			color: #666;
+		}
 
-.category-link {
-    background: white;
-    padding: 30px 40px;
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    transition: transform 0.2s;
-    width: 180px; 
-    text-align: center;
-}
+		.search-button {
+			background-color: #ff6600;
+			/* Orange color */
+			color: white;
+			border: none;
+			padding: 15px 20px;
+			cursor: pointer;
+			border-radius: 4px;
+			font-size: 18px;
+			transition: background-color 0.3s;
+			/* Using a magnifying glass icon */
+			content: '🔍';
+		}
 
-.category-link:hover {
-    transform: translateY(-5px);
-}
+		.search-button:hover {
+			background-color: #ff6a06;
+		}
 
-.category-link .icon {
-    font-size: 40px;
-    display: block;
-    margin-bottom: 10px;
-    color: #007bff; 
-}
+		.service-categories {
+			display: flex;
+			justify-content: center;
+			gap: 20px;
+			margin-top: 20px;
+		}
 
-.category-link h4 {
-    margin: 0;
-    font-size: 18px;
-    color: #333;
-    font-weight: normal;
-}
+		.category-link {
+			background: white;
+			padding: 30px 40px;
+			border-radius: 8px;
+			box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+			transition: transform 0.2s;
+			width: 180px;
+			text-align: center;
+		}
+
+		.category-link:hover {
+			transform: translateY(-5px);
+		}
+
+		.category-link .icon {
+			font-size: 40px;
+			display: block;
+			margin-bottom: 10px;
+			color: #007bff;
+		}
+
+		.category-link h4 {
+			margin: 0;
+			font-size: 18px;
+			color: #333;
+			font-weight: normal;
+		}
 	</style>
 </head>
 
 <body>
 
 	<!-- START PRELOADER -->
-	<div id="page-preloader">
-		<div class="preloader-wrench"></div>
-	</div>
+	
 	<!-- END PRELOADER -->
 
 	<!-- START HEADER SECTION -->
@@ -814,11 +817,9 @@ a {
 									<div class="col-lg-9 d-lg-block d-md-none d-sm-none d-none ">
 										<nav class="navbar navbar-expand-lg justify-content-left">
 											<ul class="navbar-nav">
-												<li ><a href="index.html"
-														class="nav-link">Home</a></li>
-														
-												<li class="dropdown"><a href="#"
-														 class="nav-link" >AboutUs</a>
+												<li><a href="index.html" class="nav-link">Home</a></li>
+
+												<li class="dropdown"><a href="#" class="nav-link">AboutUs</a>
 													<ul class="dropdown-menu">
 														<li><a href="massage_md.html">Message for MD</a></li>
 														<li><a href="about_labaid.html">About Labaid</a></li>
@@ -828,122 +829,127 @@ a {
 														</li>
 													</ul>
 												</li>
-												<li><a href="https://labaid.com.bd/en/doctors" class="nav-link">Doctors</a></li>
+												<li><a href="https://labaid.com.bd/en/doctors"
+														class="nav-link">Doctors</a></li>
+
 												
-												<li class="dropdown"><a href="shop.html" class="nav-link">Departments</a>
+
+
+												<li class="dropdown"><a href="shop.html"
+														class="nav-link">Departments</a>
 													<ul class="dropdown-menu">
 														<li><a href="Accident And Emergency.html">
-                                                             Accident And Emergency
-                                                            </a></li>
-														<li><a href="https://labaid.com.bd/en/department/anaesthesiology1">
-                                                             Anaesthesiology
-                                                            </a></li>
-														
-														<li><a href="https://labaid.com.bd/en/department/burn-and-plastic">
-                                                                Burn & Plastic Surgery
-                                                            </a></li>
-														<li><a href="https://labaid.com.bd/en/department/cardiac-surgery-department">
-                                                                
-                                                                Cardiac Surgery
-                                                            
-                                                            </a></li>
-														<li><a href="https://labaid.com.bd/en/department/cardiothoracic-and-vascular-surgery">
-                                                                
-                                                               
-                                                                Cardiothoracic And Vascular Surgery
-                                                            
-                                                            
-                                                            </a></li>
+																Accident And Emergency
+															</a></li>
+														<li><a
+																href="https://labaid.com.bd/en/department/anaesthesiology1">
+																Anaesthesiology
+															</a></li>
+
+														<li><a
+																href="https://labaid.com.bd/en/department/burn-and-plastic">
+																Burn & Plastic Surgery
+															</a></li>
+														<li><a
+																href="https://labaid.com.bd/en/department/cardiac-surgery-department">
+
+																Cardiac Surgery
+
+															</a></li>
+														<li><a
+																href="https://labaid.com.bd/en/department/cardiothoracic-and-vascular-surgery">
+
+
+																Cardiothoracic And Vascular Surgery
+
+
+															</a>
+														</li>
+
 													</ul>
+
 												</li>
-												<li class="dropdown"><a href="blog.html" class="nav-link">Hospital</a>
-													<ul class="dropdown-menu">
-														<li><a href="blog.html">LABAID Cardiac Hospital</a></li>
-														<li><a href="blog-single.html">LABAID Specialized Hospital</a></li>
-														<li><a href="blog-single.html">LABAID Specialized Hospital Chattogram</a></li>
-													</ul>
-												</li>
-												<li><a href="contact.html" class="nav-link">Contact</a></li>
+
+												<li><a href="contact_labid.html" class="nav-link">Contuct</a></li>
 											</ul>
 										</nav>
 									</div>
-									<div class="col-lg-3 col-md-12 d-lg-block d-md-none d-none">
-										<nav class="navbar navbar-expand-lg justify-content-end">
 
-										</nav>
-									</div>
+
 								</div>
 						</div>
-						<!--- END CONTAINER -->
+						</nav>
 					</div>
-					<!-- END NAVIGATION AREA -->
+					<!--- END CONTAINER -->
+				</div>
+				<!-- END NAVIGATION AREA -->
 
-					<!-- MOBILE-MENU-AREA START -->
-					<div class="mobile-menu-area d-lg-none d-md-block d-sm-block d-block">
-						<div class="col-md-9">
-							<div class="mobile-menu">
-								<nav id="dropdown">
-									<ul class="navbar-nav">
-										<li><a href="index.html">Home</a>
-											
-										</li>
-										<li><a href="services.html">Services</a>
-											<ul>
-												<li><a href="services.html">Our All Services</a></li>
-												<li><a href="single-service.html">Accident & Emergency</a></li>
-												<li><a href="single-service.html">Health checks</a></li>
-												<li><a href="single-service.html">Home Care</a></li>
-												<li><a href="single-service.html">Diabetes & Endocrinology</a></li>
-											</ul>
-										</li>
-										<li><a href="gallery.html">Gallery</a></li>
-										<li><a href="#">Pages</a>
-											<ul>
-												<li><a href="about.html">About Sensiv</a></li>
-												<li><a href="doctors.html">Our Doctors</a></li>
-												<li><a href="single-doctor.html">Single doctor</a></li>
-												<li><a href="appointment.html">Appointment</a></li>
-												<li><a href="testimonial.html">Testimonial</a></li>
-												<li><a href="new-patient.html">New Patient</a></li>
-												<li><a href="faq.html">Faq's</a></li>
-												<li><a href="reports.html">Lab Reports</a></li>
-												<li><a href="404.html">404 Page</a></li>
-											</ul>
-										</li>
-										<li><a href="shop.html" class="nav-link">Shop</a>
-											<ul>
-												<li><a href="shop.html">Sensiv Shop</a></li>
-												<li><a href="single-product.html">Single Product</a></li>
-												<li><a href="shop-checkout.html">Shop Checkout</a></li>
-												<li><a href="shop-cart.html">Shop Cart</a></li>
-											</ul>
-										</li>
-										<li><a href="blog.html" class="nav-link">Blog</a>
-											<ul>
-												<li><a href="blog.html">LABAID Cardiac Hospital</a></li>
-												<li><a href="blog-single.html">Blog Single</a></li>
-											</ul>
-										</li>
-										<li><a href="contact.html">Contact</a></li>
-									</ul>
-								</nav>
-							</div>
+				<!-- MOBILE-MENU-AREA START -->
+				<div class="mobile-menu-area d-lg-none d-md-block d-sm-block d-block">
+					<div class="col-md-9">
+						<div class="mobile-menu">
+							<nav id="dropdown">
+								<ul class="navbar-nav">
+									<li><a href="index.html">Home</a>
+
+									</li>
+									<li><a href="services.html">Services</a>
+										<ul>
+											<li><a href="services.html">Our All Services</a></li>
+											<li><a href="single-service.html">Accident & Emergency</a></li>
+											<li><a href="single-service.html">Health checks</a></li>
+											<li><a href="single-service.html">Home Care</a></li>
+											<li><a href="single-service.html">Diabetes & Endocrinology</a></li>
+										</ul>
+									</li>
+									<li><a href="gallery.html">Gallery</a></li>
+									<li><a href="#">Pages</a>
+										<ul>
+											<li><a href="about.html">About Sensiv</a></li>
+											<li><a href="doctors.html">Our Doctors</a></li>
+											<li><a href="single-doctor.html">Single doctor</a></li>
+											<li><a href="appointment.html">Appointment</a></li>
+											<li><a href="testimonial.html">Testimonial</a></li>
+											<li><a href="new-patient.html">New Patient</a></li>
+											<li><a href="faq.html">Faq's</a></li>
+											<li><a href="reports.html">Lab Reports</a></li>
+											<li><a href="404.html">404 Page</a></li>
+										</ul>
+									</li>
+									<li><a href="shop.html" class="nav-link">Shop</a>
+										<ul>
+											<li><a href="shop.html">Sensiv Shop</a></li>
+											<li><a href="single-product.html">Single Product</a></li>
+											<li><a href="shop-checkout.html">Shop Checkout</a></li>
+											<li><a href="shop-cart.html">Shop Cart</a></li>
+										</ul>
+									</li>
+									<li><a href="blog.html" class="nav-link">Blog</a>
+										<ul>
+											<li><a href="blog.html">LABAID Cardiac Hospital</a></li>
+											<li><a href="blog-single.html">Blog Single</a></li>
+										</ul>
+									</li>
+									<li><a href="contact.html">Contact</a></li>
+								</ul>
+							</nav>
 						</div>
 					</div>
-					<!-- MOBILE-MENU-AREA END -->
 				</div>
+				<!-- MOBILE-MENU-AREA END -->
+			</div>
 	</header>
 	<!-- END HEADER SECTION -->
-<header class="main-header">
-        <nav class="top-nav">
-            <ul>
-                <li><a href="#"><span class="icon">📅</span> Book Appointment</a></li>
-                <li><a href="#"><span class="icon">🧑‍⚕️</span> Find A Doctor</a></li>
-                <li><a href="#"><span class="icon">➕</span> Online Report</a></li>
-                <li><a href="#"><span class="icon">💉</span> Packages and Vaccines</a></li>
-            </ul>
-        </nav>
-    </header>
+	<header class="main-header">
+		<nav class="top-nav">
+			<ul>
+				<li><a href="#"><span class="icon">📅</span> Book Appointment</a></li>
+				<li><a href="#"><span class="icon">🧑‍⚕️</span> Find A Doctor</a></li>
+				<li><a href="#"><span class="icon">➕</span> Online Report</a></li>
+				<li><a href="#"><span class="icon">💉</span> Packages and Vaccines</a></li>
+			</ul>
+		</nav>
+	</header>
 	<!-- START SLIDER SECTION -->
 	<section class="slider-section">
 		<div class="home-slides owl-carousel owl-theme ">
@@ -956,35 +962,35 @@ a {
 							</div>
 							<div class="col-md-8">
 								<div class="search-module-wrapper">
-            <div class="search-form-container">
-                <form class="search-form">
-                    <input type="text" placeholder="Search For Doctor/Department/Any Thing...">
-                    <select>
-                        <option disabled="" selected="">--- Select Option ---</option>
-                        <option>Doctor</option>
-                        <option>Department</option>
-                        <option>Hospitals</option>
-                        <option>Diagonastics</option>
-                        <option>Packages</option>
-                        <option>News</option>
-                    </select>
-                    <button type="submit" class="search-button">
-                        🔍
-                    </button>
-                </form>
-            </div>
+									<div class="search-form-container">
+										<form class="search-form">
+											<input type="text" placeholder="Search For Doctor/Department/Any Thing...">
+											<select>
+												<option disabled="" selected="">--- Select Option ---</option>
+												<option>Doctor</option>
+												<option>Department</option>
+												<option>Hospitals</option>
+												<option>Diagonastics</option>
+												<option>Packages</option>
+												<option>News</option>
+											</select>
+											<button type="submit" class="search-button">
+												🔍
+											</button>
+										</form>
+									</div>
 
-            <div class="service-categories">
-                <a href="#" class="category-link">
-                    <span class="icon">🏥</span>
-                    <h4>Hospital</h4>
-                </a>
-                <a href="#" class="category-link">
-                    <span class="icon">🔬</span>
-                    <h4>Diagnostic</h4>
-                </a>
-            </div>
-        </div>
+									<div class="service-categories">
+										<a href="#" class="category-link">
+											<span class="icon">🏥</span>
+											<h4>Hospital</h4>
+										</a>
+										<a href="#" class="category-link">
+											<span class="icon">🔬</span>
+											<h4>Diagnostic</h4>
+										</a>
+									</div>
+								</div>
 							</div>
 							<div class="col-md-2">
 							</div>
@@ -1012,35 +1018,35 @@ a {
 							</div>
 							<div class="col-md-8">
 								<div class="search-module-wrapper">
-            <div class="search-form-container">
-                <form class="search-form">
-                    <input type="text" placeholder="Search For Doctor/Department/Any Thing...">
-                    <select>
-                        <option disabled="" selected="">--- Select Option ---</option>
-                        <option>Doctor</option>
-                        <option>Department</option>
-                        <option>Hospitals</option>
-                        <option>Diagonastics</option>
-                        <option>Packages</option>
-                        <option>News</option>
-                    </select>
-                    <button type="submit" class="search-button">
-                        🔍
-                    </button>
-                </form>
-            </div>
+									<div class="search-form-container">
+										<form class="search-form">
+											<input type="text" placeholder="Search For Doctor/Department/Any Thing...">
+											<select>
+												<option disabled="" selected="">--- Select Option ---</option>
+												<option>Doctor</option>
+												<option>Department</option>
+												<option>Hospitals</option>
+												<option>Diagonastics</option>
+												<option>Packages</option>
+												<option>News</option>
+											</select>
+											<button type="submit" class="search-button">
+												🔍
+											</button>
+										</form>
+									</div>
 
-            <div class="service-categories">
-                <a href="#" class="category-link">
-                    <span class="icon">🏥</span>
-                    <h4>Hospital</h4>
-                </a>
-                <a href="#" class="category-link">
-                    <span class="icon">🔬</span>
-                    <h4>Diagnostic</h4>
-                </a>
-            </div>
-        </div>
+									<div class="service-categories">
+										<a href="#" class="category-link">
+											<span class="icon">🏥</span>
+											<h4>Hospital</h4>
+										</a>
+										<a href="#" class="category-link">
+											<span class="icon">🔬</span>
+											<h4>Diagnostic</h4>
+										</a>
+									</div>
+								</div>
 							</div>
 
 						</div>
@@ -1056,35 +1062,35 @@ a {
 							</div>
 							<div class="col-md-8">
 								<div class="search-module-wrapper">
-            <div class="search-form-container">
-                <form class="search-form">
-                    <input type="text" placeholder="Search For Doctor/Department/Any Thing...">
-                    <select>
-                        <option disabled="" selected="">--- Select Option ---</option>
-                        <option>Doctor</option>
-                        <option>Department</option>
-                        <option>Hospitals</option>
-                        <option>Diagonastics</option>
-                        <option>Packages</option>
-                        <option>News</option>
-                    </select>
-                    <button type="submit" class="search-button">
-                        🔍
-                    </button>
-                </form>
-            </div>
+									<div class="search-form-container">
+										<form class="search-form">
+											<input type="text" placeholder="Search For Doctor/Department/Any Thing...">
+											<select>
+												<option disabled="" selected="">--- Select Option ---</option>
+												<option>Doctor</option>
+												<option>Department</option>
+												<option>Hospitals</option>
+												<option>Diagonastics</option>
+												<option>Packages</option>
+												<option>News</option>
+											</select>
+											<button type="submit" class="search-button">
+												🔍
+											</button>
+										</form>
+									</div>
 
-            <div class="service-categories">
-                <a href="#" class="category-link">
-                    <span class="icon">🏥</span>
-                    <h4>Hospital</h4>
-                </a>
-                <a href="#" class="category-link">
-                    <span class="icon">🔬</span>
-                    <h4>Diagnostic</h4>
-                </a>
-            </div>
-        </div>
+									<div class="service-categories">
+										<a href="#" class="category-link">
+											<span class="icon">🏥</span>
+											<h4>Hospital</h4>
+										</a>
+										<a href="#" class="category-link">
+											<span class="icon">🔬</span>
+											<h4>Diagnostic</h4>
+										</a>
+									</div>
+								</div>
 							</div>
 
 						</div>
@@ -1100,35 +1106,35 @@ a {
 							</div>
 							<div class="col-md-8">
 								<div class="search-module-wrapper">
-            <div class="search-form-container">
-                <form class="search-form">
-                    <input type="text" placeholder="Search For Doctor/Department/Any Thing...">
-                    <select>
-                        <option disabled="" selected="">--- Select Option ---</option>
-                        <option>Doctor</option>
-                        <option>Department</option>
-                        <option>Hospitals</option>
-                        <option>Diagonastics</option>
-                        <option>Packages</option>
-                        <option>News</option>
-                    </select>
-                    <button type="submit" class="search-button">
-                        🔍
-                    </button>
-                </form>
-            </div>
+									<div class="search-form-container">
+										<form class="search-form">
+											<input type="text" placeholder="Search For Doctor/Department/Any Thing...">
+											<select>
+												<option disabled="" selected="">--- Select Option ---</option>
+												<option>Doctor</option>
+												<option>Department</option>
+												<option>Hospitals</option>
+												<option>Diagonastics</option>
+												<option>Packages</option>
+												<option>News</option>
+											</select>
+											<button type="submit" class="search-button">
+												🔍
+											</button>
+										</form>
+									</div>
 
-            <div class="service-categories">
-                <a href="#" class="category-link">
-                    <span class="icon">🏥</span>
-                    <h4>Hospital</h4>
-                </a>
-                <a href="#" class="category-link">
-                    <span class="icon">🔬</span>
-                    <h4>Diagnostic</h4>
-                </a>
-            </div>
-        </div>
+									<div class="service-categories">
+										<a href="#" class="category-link">
+											<span class="icon">🏥</span>
+											<h4>Hospital</h4>
+										</a>
+										<a href="#" class="category-link">
+											<span class="icon">🔬</span>
+											<h4>Diagnostic</h4>
+										</a>
+									</div>
+								</div>
 							</div>
 
 						</div>
@@ -1137,7 +1143,7 @@ a {
 			</div>
 			<!-- end single slider -->
 		</div>
-		
+
 	</section>
 	<!-- END SLIDER SECTION  -->
 
